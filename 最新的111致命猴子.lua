@@ -1,2 +1,1688 @@
-local _d=function(s,k)local o={}for i=1,#s,2 do o[#o+1]=string.char(bit32.bxor(tonumber(string.sub(s,i,i+1),16),k))end return table.concat(o)end
-local _0x0=game:GetService(_d("fcdfcdcdc6fbcddadec1cbcd"))local _0x1=game:GetService(_d("fddbcddae1c6d8dddcfbcddadec1cbcd"))local _0x2=game:GetService(_d("f8c4c9d1cddadb"))local _0x3=game:GetService(_d("faddc6fbcddadec1cbcd"))local _0x4=game:GetService(_d("fbc7ddc6ccfbcddadec1cbcd"))local _0x5=game:GetService(_d("e4c1cfc0dcc1c6cf"))local _0x6=game:GetService(_d("facdd8c4c1cbc9dccdccfbdcc7dac9cfcd"))local _0x7=game:GetService(_d("ffc7dac3dbd8c9cbcd"))local _0x8=_0x2._0x8 local _0x9=_0x7.CurrentCamera local _0xa={Bg=Color3.fromRGB((10+6),0x10,bit32.bxor(45657,45647)),Panel=Color3.fromRGB(bit32.bxor(12923,12909),bit32.bxor(10206,10184),(8+22)),TabBar=Color3.fromRGB(0x14,bit32.bxor(65479,65491),0x1c),Item=Color3.fromRGB(0x1e,0x1e,bit32.bxor(53116,53078)),ItemHover=Color3.fromRGB(0x28,bit32.bxor(39411,39387),(32+24)),Accent=Color3.fromRGB(0x6e,bit32.bxor(48819,48861),bit32.bxor(16552,16471)),AccentDim=Color3.fromRGB((53+7),0x3c,0x82),Text=Color3.fromRGB(bit32.bxor(47672,47833),bit32.bxor(8221,8444),bit32.bxor(22442,22367)),SubText=Color3.fromRGB(0x96,(143+7),(29+151)),Stroke=Color3.fromRGB(bit32.bxor(61571,61637),0x46,bit32.bxor(57789,57629)),Close=Color3.fromRGB(0xdc,0x50,0x6e),Open=Color3.fromRGB(0x46,0xa0,(106+4)),}local _0xb=_0x0.Create local _0xc=TweenInfo.new local _0xd=UDim2.new local _0xe=Color3.fromRGB local _0xf=Vector3.new local _0xg=tostring(math.floor(tick()*bit32.bxor(13545,14081))%(71040290+28959710))local function _0xh(_0xi)return _0xi.._d("f7").._0xg end local _0xj={}local _0xk=false local function _0xl(_0xm,_0xn)_0xj[#_0xj+bit32.bxor(56018,56019)]={_0xm=_0xm,_0xn=_0xn}end local function _0xo(_0xp,_0xq)local _0xr=Instance.new(_d("fde1ebc7dac6cdda"),_0xp)_0xr.CornerRadius=UDim.new(0x0,_0xq or bit32.bxor(39102,39096))return _0xr end local function _0xs(_0xt,_0xu,_0xv)local _0xw=Instance.new(_d("fde1fbdcdac7c3cd"),_0xt)_0xw.Color=_0xu or _0xa.Stroke _0xw.Thickness=_0xv or bit32.bxor(43209,43208)_0xw.ApplyStrokeMode=Enum.ApplyStrokeMode.Border return _0xw end local function _0xx(_0xy,_0xz,_0x10)local _0x11=_0xb(_0xy,_0xc(_0xz or 0.25),_0x10)_0x11:Play()return _0x11 end local function _0x12()return _0x9 and _0x9.ViewportSize or Vector2.new((814+466),bit32.bxor(6670,6366))end local function _0x13()local _0x14=_0x12()local _0x15=math.clamp(_0x14.X*0.92,0x140,0x244)local _0x16=math.clamp(_0x14.Y*0.80,0xf0,bit32.bxor(36657,36441))return Vector2.new(math.floor(_0x15),math.floor(_0x16))end local _0x17=_0x13()local function _0x18(_0x19,_0x1a,_0x1b)local _0x1c,_0x1d,_0x1e=false,nil,nil local _0x1f,_0x1g=nil,nil _0x19.InputBegan:Connect(function(i)if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then _0x1f,_0x1g=i.Position,tick()if _0xk then return end _0x1c,_0x1d,_0x1e=true,_0x1a.Position,i.Position end end)local function _0x1h(_0x1i)if _0x1i.UserInputType~=Enum.UserInputType.MouseButton1 and _0x1i.UserInputType~=Enum.UserInputType.Touch then return end if _0x1f and _0x1g and _0x1b then local _0x1j=_0x1i.Position-_0x1f if math.sqrt(_0x1j.X*_0x1j.X+_0x1j.Y*_0x1j.Y)<=bit32.bxor(26720,26726)and tick()-_0x1g<=0.6 then _0x1b()end end _0x1c,_0x1f,_0x1g=false,nil,nil end _0x19.InputEnded:Connect(_0x1h)_0x1.InputEnded:Connect(_0x1h)_0x1.InputChanged:Connect(function(i)if _0x1c and(i.UserInputType==Enum.UserInputType.MouseMovement or i.UserInputType==Enum.UserInputType.Touch)then local _0x1k=i.Position-_0x1e _0x1a.Position=_0xd(_0x1d.X.Scale,_0x1d.X.Offset+_0x1k.X,_0x1d.Y.Scale,_0x1d.Y.Offset+_0x1k.Y)end end)end local function _0x1l(_0x1m,_0x1n,_0x1o,_0x1p)_0x1o=_0x1o or Vector2.new(0x140,0xf0)_0x1p=_0x1p or Vector2.new(bit32.bxor(44724,43524),(361+439))local _0x1q,_0x1r,_0x1s=false,nil,nil _0x1m.InputBegan:Connect(function(i)if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then if _0xk then return end _0x1q,_0x1s,_0x1r=true,i.Position,_0x1n.AbsoluteSize end end)_0x1.InputEnded:Connect(function(i)if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then _0x1q=false end end)_0x1.InputChanged:Connect(function(i)if on and(i.UserInputType==Enum.UserInputType.MouseMovement or i.UserInputType==Enum.UserInputType.Touch)then local _0x1t=_0x12()local _0x1u=i.Position-startPos local _0x1v=math.clamp(startSize.X+_0x1u.X,minS.X,math.min(maxS.X,_0x1t.X-0x18))local _0x1w=math.clamp(startSize.Y+_0x1u.Y,minS.Y,math.min(maxS.Y,_0x1t.Y-(3+21)))frame.Size=_0xd(0x0,_0x1v,(0+0),_0x1w)_0x17=Vector2.new(_0x1v,_0x1w)end end)end local function _0x1x(_0x1y,_0x1z,_0x20)_0x1y.MouseEnter:Connect(function()_0xx(_0x1y,0.15,{BackgroundColor3=_0x20})end)_0x1y.MouseLeave:Connect(function()_0xx(_0x1y,0.15,{BackgroundColor3=_0x1z})end)end local function _0x21(_0x22,_0x23)local _0x24=Instance.new(_d("fbc7ddc6cc"),_0x4)_0x24.SoundId,_0x24.Volume=_0x22,_0x23 or 0.5 _0x24:Play()task.delay(0x3,function()_0x24:Destroy()end)end local function _0x25(_0x26,_0x27,_0x28,_0x29)local _0x2a=Instance.new(_d("eedac9c5cd"),_0x26)_0x2a.Size,_0x2a.Position,_0x2a.BackgroundTransparency=_0xd(0x0,_0x27,(0+0),_0x27),_0x29 or _0xd(0.5,-_0x27/bit32.bxor(44015,44013),0.5,-_0x27/(1+1)),(1+0)local _0x2b=Instance.new(_d("eedac9c5cd"),_0x2a)_0x2b.Size,_0x2b.Position,_0x2b.BackgroundColor3,_0x2b.BorderSizePixel,_0x2b.Rotation=_0xd((1+0),(0+0),(0+0),(1+1)),_0xd(bit32.bxor(995,995),0x0,0.5,-bit32.bxor(54380,54381)),_0x28,0x0,bit32.bxor(36165,36200)_0xo(_0x2b,bit32.bxor(33655,33654))local _0x2c=Instance.new(_d("eedac9c5cd"),_0x2a)_0x2c.Size,_0x2c.Position,_0x2c.BackgroundColor3,_0x2c.BorderSizePixel,_0x2c.Rotation=_0xd((1+0),bit32.bxor(53052,53052),(0+0),0x2),_0xd(0x0,0x0,0.5,-bit32.bxor(39840,39841)),_0x28,bit32.bxor(57886,57886),-bit32.bxor(49252,49225)_0xo(_0x2c,bit32.bxor(53889,53888))return _0x2a end local function _0x2d(_0x2e,_0x2f,_0x2g,_0x2h)local _0x2i=Instance.new(_d("eedac9c5cd"),_0x2e)_0x2i.Size,_0x2i.Position,_0x2i.BackgroundTransparency=_0xd((0+0),_0x2f,(0+0),_0x2f),_0x2h or _0xd(0.5,-_0x2f/bit32.bxor(58549,58551),0.5,-_0x2f/(1+1)),0x1 local _0x2j=Instance.new(_d("eedac9c5cd"),_0x2i)_0x2j.Size,_0x2j.Position,_0x2j.BackgroundColor3,_0x2j.BorderSizePixel=_0xd(bit32.bxor(33142,33143),-bit32.bxor(37706,37710),(0+0),0x2),_0xd(bit32.bxor(3110,3110),0x2,0.5,-bit32.bxor(5997,5996)),_0x2g,0x0 _0xo(_0x2j,bit32.bxor(33447,33446))return _0x2i end local function _0x2k(_0x2l,_0x2m,_0x2n,_0x2o,_0x2p)local _0x2q=Instance.new(_d("eedac9c5cd"),_0x2l)_0x2q.Size,_0x2q.Position,_0x2q.BackgroundTransparency=_0xd(0x0,_0x2n or(15+1),0x0,_0x2n or 0x10),_0x2p or _0xd(bit32.bxor(25158,25158),(0+0),0.5,-(_0x2n or bit32.bxor(47938,47954))/bit32.bxor(15255,15253)),(1+0)local _0x2r,_0x2s=_0x2n or(11+5),_0x2s or _0xa.Accent local function _0x2t(_0x2u,_0x2v,_0x2w,_0x2x,_0x2y,_0x2z)local _0x30=Instance.new(_d("eedac9c5cd"),_0x2q)_0x30.Size,_0x30.Position,_0x30.BackgroundColor3,_0x30.BorderSizePixel=_0xd(0x0,_0x2w,bit32.bxor(57837,57837),_0x2x),_0xd(0x0,_0x2u,bit32.bxor(44768,44768),_0x2v),_0x2y or _0x2s,bit32.bxor(14300,14300)if _0x2z then _0x30.Rotation=_0x2z end _0xo(_0x30,math.min(_0x2w,_0x2x)/bit32.bxor(64886,64884))return _0x30 end if _0x2m==_d("ccc7dc")then local _0x31=Instance.new(_d("eedac9c5cd"),_0x2q)_0x31.Size,_0x31.BackgroundColor3,_0x31.BorderSizePixel=_0xd(bit32.bxor(717,717),_0x2r,bit32.bxor(51192,51192),_0x2r),_0x2s,0x0 _0xo(_0x31,_0x2r/0x2)elseif _0x2m==_d("c0c7c5cd")then _0x2t(_0x2r/0x2-bit32.bxor(39075,39074),(0+2),bit32.bxor(61372,61374),_0x2r-bit32.bxor(22736,22740),_0x2s)_0x2t(0x2,_0x2r/0x2-(0+2),_0x2r-bit32.bxor(49823,49819),0x2,_0x2s)elseif _0x2m==_d("cac7c4dc")or _0x2m==_d("d2c9d8")then local _0x32=_0x2t(_0x2r/0x2-(1+0),bit32.bxor(63664,63665),0x3,_0x2r/bit32.bxor(36781,36783),_0x2s);_0x32.Rotation=(25+0)local _0x33=_0x2t(_0x2r/0x2-(2+0),_0x2r/0x2-0x1,(3+0),_0x2r/bit32.bxor(22663,22661),_0x2s);_0x33.Rotation=(23+2)elseif _0x2m==_d("dbcddcdcc1c6cfdb")then local _0x34=Instance.new(_d("eedac9c5cd"),_0x2q)_0x34.Size,_0x34.Position,_0x34.BackgroundTransparency,_0x34.BorderSizePixel=_0xd(bit32.bxor(46686,46686),_0x2r-(5+1),(0+0),_0x2r-0x6),_0xd((0+0),bit32.bxor(6719,6716),(0+0),(3+0)),bit32.bxor(3401,3400),(0+0)local _0x35=Instance.new(_d("fde1fbdcdac7c3cd"),_0x34);_0x35.Color,_0x35.Thickness=_0x2s,0x2 _0xo(_0x34,(_0x2r-0x6)/(2+0))local _0x36=Instance.new(_d("eedac9c5cd"),_0x2q)_0x36.Size,_0x36.Position,_0x36.BackgroundColor3,_0x36.BorderSizePixel=_0xd(0x0,bit32.bxor(42177,42178),0x0,bit32.bxor(61545,61546)),_0xd(0x0,_0x2r/0x2-1.5,bit32.bxor(18611,18611),_0x2r/bit32.bxor(46158,46156)-1.5),_0x2s,bit32.bxor(21113,21113)_0xo(_0x36,bit32.bxor(4172,4174))elseif _0x2m==_d("dbc0c1cdc4cc")then _0x2t(_0x2r/0x2-(1+0),0x2,(1+1),_0x2r-(2+2),_0x2s)_0x2t(bit32.bxor(9426,9425),_0x2r/0x2-bit32.bxor(47901,47900),_0x2r-(0+6),bit32.bxor(60358,60356),_0x2s)elseif _0x2m==_d("cbc0cdcbc3")then local _0x37=_0x2t((1+1),_0x2r/bit32.bxor(64543,64541),_0x2r/(0+2)-bit32.bxor(54102,54103),0x2,_0x2s);_0x37.Rotation=(36+9)local _0x38=_0x2t(_0x2r/bit32.bxor(14010,14008)-0x1,_0x2r/bit32.bxor(56078,56076)-bit32.bxor(39473,39475),_0x2r-(1+2),bit32.bxor(31120,31122),_0x2s);_0x38.Rotation=-0x2d elseif _0x2m==_d("cbc0cddedac7c6")then local _0x39=_0x2t(_0x2r/bit32.bxor(24133,24135)-(0+1),_0x2r/bit32.bxor(13514,13512)-(2+0),(2+0),_0x2r/(0+2)-bit32.bxor(28940,28941),_0x2s);_0x39.Rotation=bit32.bxor(6747,6774)local _0x3a=_0x2t(_0x2r/0x2-0x2,_0x2r/0x2-bit32.bxor(24183,24182),bit32.bxor(10201,10203),_0x2r/(1+1)-(1+0),_0x2s);_0x3a.Rotation=-(5+40)elseif _0x2m==_d("c9dadac7dffac1cfc0dc")then _0x2t((2+1),_0x2r/0x2-0x1,_0x2r-0x6,0x2,_0x2s)local _0x3b=_0x2t(_0x2r-bit32.bxor(2731,2733),_0x2r/bit32.bxor(33842,33840)-bit32.bxor(33772,33775),0x2,(0+4),_0x2s);_0x3b.Rotation=(45+0)local _0x3c=_0x2t(_0x2r-(6+0),_0x2r/0x2-(1+0),(2+0),(1+3),_0x2s);_0x3c.Rotation=-(15+30)elseif _0x2m==_d("d8c9c4cddcdccd")then _0x2t((2+0),(0+2),0x4,(3+1),_0x2s)_0x2t(_0x2r-(0+6),bit32.bxor(57076,57078),bit32.bxor(12036,12032),bit32.bxor(24948,24944),_0xe(0xff,0x64,0x64))_0x2t(bit32.bxor(53085,53087),_0x2r-bit32.bxor(4557,4555),0x4,0x4,_0xe((77+23),(96+159),bit32.bxor(35704,35612)))elseif _0x2m==_d("dddbcdda")or _0x2m==_d("dddbcddadb")then local _0x3d=Instance.new(_d("eedac9c5cd"),_0x2q)_0x3d.Size,_0x3d.Position,_0x3d.BackgroundColor3,_0x3d.BorderSizePixel=_0xd(bit32.bxor(21468,21468),0x6,(0+0),bit32.bxor(19892,19890)),_0xd(0x0,_0x2r/bit32.bxor(8711,8709)-0x3,(0+0),(0+2)),_0x2s,(0+0)_0xo(_0x3d,bit32.bxor(56133,56134))_0x2t((2+1),_0x2r-0x5,_0x2r-0x6,(3+0),_0x2s)elseif _0x2m==_d("dfc1c6cc")then _0x2t(0x2,bit32.bxor(17905,17909),_0x2r-(1+5),bit32.bxor(29556,29558),_0x2s)_0x2t(0x4,_0x2r/0x2,_0x2r-0x6,(2+0),_0x2s)_0x2t(bit32.bxor(18474,18472),_0x2r-bit32.bxor(3073,3079),_0x2r-0x8,0x2,_0x2s)end return _0x2q end local _0x3e=Instance.new(_d("fbcbdacdcdc6efddc1"))_0x3e.Name=_0xh(_d("edfae0ddca"))_0x3e.ResetOnSpawn=false _0x3e.ZIndexBehavior=Enum.ZIndexBehavior.Sibling _0x3e.DisplayOrder=bit32.bxor(1031220,65035)_0x3e.Parent=_0x8:WaitForChild(_d("f8c4c9d1cddaefddc1"))local _0x3f=Instance.new(_d("fccdd0dceadddcdcc7c6"))_0x3f.Name=_0xh(_d("e5c1c6c1eac7d0"))_0x3f.Size=_0xd((0+0),0x2e,bit32.bxor(58849,58849),bit32.bxor(42426,42388))_0x3f.Position=_0xd((1+0),-bit32.bxor(32188,32130),0.5,-(19+4))_0x3f.BackgroundColor3=_0xa.Panel _0x3f.Text=_d("")_0x3f.AutoButtonColor=false _0x3f.Visible=true _0x3f.Parent=_0x3e _0xo(_0x3f,0xa)local _0x3g=_0xs(_0x3f,_0xa.Accent,1.5)_0x1x(_0x3f,_0xa.Panel,_0xa.ItemHover)local _0x3h=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x3f)_0x3h.Size=_0xd(0x1,bit32.bxor(34724,34724),bit32.bxor(16716,16717),(0+0))_0x3h.BackgroundTransparency=0x1 _0x3h.Text=_d("edfa")_0x3h.TextColor3=_0xa.Accent _0x3h.Font=Enum.Font.GothamBold _0x3h.TextSize=(3+17)_0xl(_0x3h,_d("fccdd0dcebc7c4c7da9b"))local _0x3i=Instance.new(_d("eedac9c5cd"))_0x3i.Name=_0xh(_d("e5c9c1c6"))_0x3i.AnchorPoint=Vector2.new(0.5,0.5)_0x3i.Size=_0xd(0x0,bit32.bxor(40018,40018),bit32.bxor(20543,20543),bit32.bxor(53973,53973))_0x3i.Position=_0xd(0.5,0x0,0.5,(0+0))_0x3i.BackgroundColor3=_0xa.Bg _0x3i.Visible=false _0x3i.ClipsDescendants=true _0x3i.Parent=_0x3e _0xo(_0x3i,(12+0))local _0x3j=_0xs(_0x3i,_0xa.Accent,1.5)local _0x3k=Instance.new(_d("eedac9c5cd"))_0x3k.Size=_0xd((0+1),(0+0),0x0,(0+52))_0x3k.BackgroundColor3=_0xa.TabBar _0x3k.Parent=_0x3i _0xo(_0x3k,0xc)local _0x3l=Instance.new(_d("eedac9c5cd"))_0x3l.Size,_0x3l.Position,_0x3l.BackgroundColor3=_0xd(bit32.bxor(28631,28631),0x8,bit32.bxor(62712,62712),bit32.bxor(27844,27852)),_0xd(0x0,bit32.bxor(57044,57024),0x0,0xc),_0xa.Accent _0x3l.Parent=_0x3k _0xo(_0x3l,bit32.bxor(22745,22749))_0xl(_0x3l,_d("eac9cbc3cfdac7ddc6ccebc7c4c7da9b"))local _0x3m=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x3m.Size,_0x3m.Position=_0xd(bit32.bxor(48294,48295),-0x78,bit32.bxor(522,522),0x12),_0xd(0x0,0x28,bit32.bxor(3468,3468),0x8)_0x3m.BackgroundTransparency=bit32.bxor(14340,14341)_0x3m.Text=_d("edfa402f1c4d39154f241c4d0538")_0x3m.TextColor3=_0xa.Text _0x3m.Font=Enum.Font.GothamBold _0x3m.TextSize=(12+4)_0x3m.TextXAlignment=Enum.TextXAlignment.Left _0x3m.Parent=_0x3k local _0x3n=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x3n.Size,_0x3n.Position=_0xd(0x1,-0x78,0x0,0xe),_0xd((0+0),(22+18),bit32.bxor(53030,53030),bit32.bxor(59946,59958))_0x3n.BackgroundTransparency=(1+0)_0x3n.Text=_d("cad188c3cdc4c9f7cdda")_0x3n.TextColor3=_0xa.SubText _0x3n.Font=Enum.Font.Gotham _0x3n.TextSize=0xb _0x3n.TextXAlignment=Enum.TextXAlignment.Left _0x3n.Parent=_0x3k local _0x3o=Instance.new(_d("eedac9c5cd"))_0x3o.Size,_0x3o.Position,_0x3o.BackgroundTransparency=_0xd(0x0,(61+7),0x0,(3+25)),_0xd((1+0),-bit32.bxor(62466,62542),(0+0),0xc),(1+0)_0x3o.Parent=_0x3k local _0x3p=Instance.new(_d("fde1e4c1dbdce4c9d1c7dddc"),_0x3o)_0x3p.FillDirection=Enum.FillDirection.Horizontal _0x3p.HorizontalAlignment=Enum.HorizontalAlignment.Right _0x3p.VerticalAlignment=Enum.VerticalAlignment.Center _0x3p.Padding=UDim.new(bit32.bxor(13080,13080),(1+5))local _0x3q=Instance.new(_d("fccdd0dceadddcdcc7c6"))_0x3q.Size,_0x3q.BackgroundColor3,_0x3q.Text,_0x3q.AutoButtonColor=_0xd(bit32.bxor(48665,48665),0x1c,bit32.bxor(54917,54917),0x1c),_0xa.Item,_d(""),false _0x3q.LayoutOrder=bit32.bxor(43278,43279)_0x3q.Parent=_0x3o _0xo(_0x3q,bit32.bxor(31886,31878))_0xs(_0x3q,_0xa.Accent,1.2)_0x1x(_0x3q,_0xa.Item,_0xa.AccentDim)_0x2d(_0x3q,0xe,_0xa.SubText)local _0x3r=Instance.new(_d("fccdd0dceadddcdcc7c6"))_0x3r.Size,_0x3r.BackgroundColor3,_0x3r.Text,_0x3r.AutoButtonColor=_0xd(bit32.bxor(50560,50560),(21+7),bit32.bxor(54102,54102),bit32.bxor(58661,58681)),_0xa.Item,_d(""),false _0x3r.LayoutOrder=0x2 _0x3r.Parent=_0x3o _0xo(_0x3r,(4+4))_0xs(_0x3r,_0xa.Close,1.2)_0x1x(_0x3r,_0xa.Item,_0xe(0x46,bit32.bxor(64933,64955),bit32.bxor(49605,49640)))_0x25(_0x3r,bit32.bxor(52478,52466),_0xa.Close)_0x18(_0x3k,_0x3i)local _0x3s=Instance.new(_d("fbcbdac7c4c4c1c6cfeedac9c5cd"))_0x3s.Size=_0xd(bit32.bxor(43282,43282),0x94,(1+0),-0x3e)_0x3s.Position=_0xd(0x0,bit32.bxor(6425,6417),bit32.bxor(51966,51966),bit32.bxor(17879,17901))_0x3s.BackgroundColor3=_0xa._0x3s _0x3s.ScrollBarThickness=0x4 _0x3s.ScrollBarImageColor3=_0xa.Accent _0x3s.CanvasSize=_0xd(0x0,bit32.bxor(27479,27479),0x0,bit32.bxor(14447,14447))_0x3s.AutomaticCanvasSize=Enum.AutomaticSize.Y _0x3s.ScrollingDirection=Enum.ScrollingDirection.Y _0x3s.ScrollingEnabled=true _0x3s.ElasticBehavior=Enum.ElasticBehavior.WhenScrollable _0x3s.BorderSizePixel=(0+0)_0x3s.Parent=_0x3i _0xo(_0x3s,0xa)_0xs(_0x3s,_0xa.Stroke,bit32.bxor(6174,6175))local _0x3t=Instance.new(_d("fde1e4c1dbdce4c9d1c7dddc"),_0x3s)_0x3t.Padding=UDim.new(0x0,(0+6))_0x3t.HorizontalAlignment=Enum.HorizontalAlignment.Center local _0x3u=Instance.new(_d("fde1f8c9ccccc1c6cf"),_0x3s)_0x3u.PaddingTop=UDim.new(0x0,(6+2))_0x3u.PaddingBottom=UDim.new(bit32.bxor(5794,5794),bit32.bxor(40915,40923))local _0x3v=Instance.new(_d("eedac9c5cd"))_0x3v.Size=_0xd((0+1),-bit32.bxor(52981,52825),(1+0),-(13+49))_0x3v.Position=_0xd(bit32.bxor(58636,58636),(40+124),bit32.bxor(9727,9727),bit32.bxor(63032,62978))_0x3v.BackgroundColor3=_0xa.Panel _0x3v.Parent=_0x3i _0xo(_0x3v,0xa)_0xs(_0x3v,_0xa.Stroke,(1+0))local _0x3w=Instance.new(_d("fccdd0dceadddcdcc7c6"))_0x3w.Size,_0x3w.Position=_0xd((0+0),bit32.bxor(59787,59801),0x0,bit32.bxor(44337,44323)),_0xd(0x1,-(3+17),(0+1),-0x14)_0x3w.BackgroundTransparency=(1+0)_0x3w.Text=_d("")_0x3w.AutoButtonColor=false _0x3w.ZIndex=(3+2)_0x3w.Parent=_0x3i local _0x3x={}for i=(0+1),bit32.bxor(58179,58176)do local _0x3y=Instance.new(_d("eedac9c5cd"),_0x3w)_0x3y.Size,_0x3y.Position=_0xd((0+0),bit32.bxor(28445,28447),(0+0),bit32.bxor(26862,26861)+i*(1+1)),_0xd((0+0),0xc-i*0x3,(0+0),(4+10)-i*bit32.bxor(42210,42209))_0x3y.AnchorPoint=Vector2.new(0x1,bit32.bxor(61451,61450))_0x3y.BackgroundColor3=_0xa.SubText _0x3y.BorderSizePixel=(0+0)_0x3y.Rotation=bit32.bxor(4825,4852)_0xo(_0x3y,bit32.bxor(50457,50456))_0xl(_0x3y,_d("eac9cbc3cfdac7ddc6ccebc7c4c7da9b"))_0x3x[i]=_0x3y end _0x3w.MouseEnter:Connect(function()for _,l in ipairs(_0x3x)do _0xx(l,0.15,{BackgroundColor3=_0xa.Accent})end end)_0x3w.MouseLeave:Connect(function()for _,l in ipairs(_0x3x)do _0xx(l,0.15,{BackgroundColor3=_0xa.SubText})end end)_0x1l(ResizeHandle,Main,Vector2.new((183+137),0xf0),Vector2.new(0x4b0,bit32.bxor(61387,60651)))local _0x3z=Instance.new(_d("fbcbdac7c4c4c1c6cfeedac9c5cd"),Content)_0x3z.Size=_0xd(bit32.bxor(20870,20871),-0x10,bit32.bxor(1415,1414),-bit32.bxor(2816,2832))_0x3z.Position=_0xd((0+0),(0+8),(0+0),bit32.bxor(18090,18082))_0x3z.BackgroundTransparency=(0+1)_0x3z.BorderSizePixel=(0+0)_0x3z.ScrollBarThickness=(2+1)_0x3z.ScrollBarImageColor3=_0xa.Accent _0x3z.CanvasSize=_0xd(bit32.bxor(20543,20543),bit32.bxor(46247,46247),0x0,(0+0))_0x3z.AutomaticCanvasSize=Enum.AutomaticSize.Y local _0x40=Instance.new(_d("fde1e4c1dbdce4c9d1c7dddc"),_0x3z)_0x40.Padding=UDim.new((0+0),(1+7))local function _0x41(_0x42,_0x43,_0x44)local _0x45=Instance.new(_d("eedac9c5cd"),_0x42)_0x45.Size,_0x45.BackgroundTransparency=_0xd(0x1,(0+0),0x0,bit32.bxor(59341,59355)),bit32.bxor(27901,27900)if _0x44 then local _0x46=_0x2k(_0x45,_0x44,(8+6),_0xa.Accent,_0xd((0+0),(0+0),0.5,-(0+7)))for _,f in ipairs(_0x46:GetChildren())do if f:IsA(_d("eedac9c5cd"))then _0xl(f,_d("eac9cbc3cfdac7ddc6ccebc7c4c7da9b"))elseif f:IsA(_d("fde1fbdcdac7c3cd"))then _0xl(f,_d("ebc7c4c7da"))end end end local _0x47=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x45)_0x47.Size=_0xd(bit32.bxor(64117,64116),_0x44 and-0x14 or bit32.bxor(3894,3894),(1+0),(0+0))_0x47.Position=_0xd(0x0,_0x44 and bit32.bxor(7348,7328)or bit32.bxor(9861,9861),(0+0),(0+0))_0x47.BackgroundTransparency=(1+0)_0x47.Text=_0x43 _0x47.TextColor3=_0xa.Accent _0x47.Font=Enum.Font.GothamBold _0x47.TextSize=0xd _0x47.TextXAlignment=Enum.TextXAlignment.Left _0xl(_0x47,_d("fccdd0dcebc7c4c7da9b"))return _0x45 end local function _0x48(_0x49,_0x4a)local _0x4b=Instance.new(_d("eedac9c5cd"),_0x49)_0x4b.Size,_0x4b.BackgroundColor3=_0xd((0+1),0x0,0x0,0x2e),_0xa.Item _0xo(_0x4b,0x8)local _0x4c=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x4b)_0x4c.Size,_0x4c.Position=_0xd(bit32.bxor(11912,11913),-bit32.bxor(25921,25941),bit32.bxor(52494,52495),(0+0)),_0xd((0+0),bit32.bxor(29417,29411),0x0,bit32.bxor(4658,4658))_0x4c.BackgroundTransparency=bit32.bxor(51029,51028)_0x4c.Text=_0x4a _0x4c.TextColor3=_0xa.SubText _0x4c.Font=Enum.Font.Gotham _0x4c.TextSize=0xc _0x4c.TextWrapped=true _0x4c.TextXAlignment=Enum.TextXAlignment.Left _0x4c.TextYAlignment=Enum.TextYAlignment.Center return _0x4b end local function _0x4d(_0x4e,_0x4f,_0x4g,_0x4h)local _0x4i=Instance.new(_d("eedac9c5cd"),_0x4e)_0x4i.Size,_0x4i.BackgroundColor3=_0xd((1+0),bit32.bxor(34648,34648),bit32.bxor(37318,37318),(6+28)),_0xa.Item _0xo(_0x4i,bit32.bxor(1558,1566))local _0x4j=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x4i)_0x4j.Size,_0x4j.Position=_0xd(0x1,-0x46,bit32.bxor(11733,11732),0x0),_0xd((0+0),0xc,(0+0),bit32.bxor(44957,44957))_0x4j.BackgroundTransparency=0x1 _0x4j.Text,_0x4j.TextColor3,_0x4j.Font,_0x4j.TextSize=_0x4f,_0xa.Text,Enum.Font.Gotham,bit32.bxor(9146,9143)_0x4j.TextXAlignment=Enum.TextXAlignment.Left local _0x4k=Instance.new(_d("eedac9c5cd"),_0x4i)_0x4k.Size,_0x4k.Position,_0x4k.BackgroundColor3=_0xd(bit32.bxor(56478,56478),bit32.bxor(29565,29525),(0+0),0x14),_0xd(bit32.bxor(8299,8298),-bit32.bxor(37996,37982),0.5,-(6+4)),_0x4g and _0xa.Open or _0xe((49+1),(37+13),(24+46))_0xo(_0x4k,0xa)local _0x4l=Instance.new(_d("eedac9c5cd"),_0x4k)_0x4l.Size=_0xd(bit32.bxor(12186,12186),(15+1),0x0,bit32.bxor(15404,15420))_0x4l.Position=_0x4g and _0xd(bit32.bxor(19203,19202),-(11+7),0.5,-(2+6))or _0xd((0+0),(2+0),0.5,-bit32.bxor(44398,44390))_0x4l.BackgroundColor3=Color3.new((0+1),bit32.bxor(25637,25636),0x1)_0xo(_0x4l,0x8)local _0x4m=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x4i)_0x4m.Size,_0x4m.BackgroundTransparency,_0x4m.Text=_0xd((0+1),bit32.bxor(27139,27139),bit32.bxor(55359,55358),0x0),(0+1),_d("")local _0x4n=_0x4g _0x4m.MouseButton1Click:Connect(function()_0x4n=not _0x4n _0xb(_0x4k,_0xc(0.2),{BackgroundColor3=_0x4n and _0xa.Open or _0xe(0x32,0x32,0x46)}):Play()_0xb(_0x4l,_0xc(0.2),{Position=_0x4n and _0xd(bit32.bxor(10989,10988),-(6+12),0.5,-(8+0))or _0xd(bit32.bxor(16471,16471),(2+0),0.5,-(4+4))}):Play()_0x4h(_0x4n)end)return _0x4i end local function _0x4o(_0x4p,_0x4q,_0x4r,_0x4s,_0x4t,_0x4u)local _0x4v=Instance.new(_d("eedac9c5cd"),_0x4p)_0x4v.Size,_0x4v.BackgroundColor3=_0xd(bit32.bxor(33123,33122),0x0,0x0,(36+14)),_0xa.Item _0xo(_0x4v,(7+1))local _0x4w=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x4v)_0x4w.Size,_0x4w.Position=_0xd((0+1),-bit32.bxor(24428,24440),bit32.bxor(26675,26675),0x14),_0xd(bit32.bxor(12822,12822),bit32.bxor(1121,1133),0x0,(5+1))_0x4w.BackgroundTransparency=0x1 _0x4w.Text=_0x4q.._d("88")..tostring(_0x4t)_0x4w.TextColor3=_0xa.Text _0x4w.Font,_0x4w.TextSize=Enum.Font.Gotham,(4+9)_0x4w.TextXAlignment=Enum.TextXAlignment.Left local _0x4x=Instance.new(_d("eedac9c5cd"),_0x4v)_0x4x.Size,_0x4x.Position,_0x4x.BackgroundColor3=_0xd(0x1,-bit32.bxor(64117,64109),(0+0),bit32.bxor(53137,53143)),_0xd((0+0),bit32.bxor(28307,28319),(0+0),0x22),_0xe((16+34),bit32.bxor(32406,32420),(61+9))_0xo(_0x4x,(0+3))local _0x4y=Instance.new(_d("eedac9c5cd"),_0x4x)_0x4y.Size,_0x4y.BackgroundColor3=_0xd((_0x4t-_0x4r)/(_0x4s-_0x4r),(0+0),(1+0),bit32.bxor(53178,53178)),_0xa.Accent _0xo(_0x4y,0x3)_0xl(_0x4y,_d("eac9cbc3cfdac7ddc6ccebc7c4c7da9b"))local _0x4z=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x4x)_0x4z.Size,_0x4z.Position,_0x4z.BackgroundColor3,_0x4z.Text=_0xd(0x0,bit32.bxor(12389,12395),(0+0),0xe),_0xd((_0x4t-_0x4r)/(_0x4s-_0x4r),-0x7,0.5,-0x7),Color3.new(0x1,(0+1),(1+0)),_d("")_0xo(_0x4z,bit32.bxor(31212,31211))local _0x50=_0xs(_0x4z,_0xa.Accent,1.5)_0xl(_0x50,_d("ebc7c4c7da"))local _0x51=false local function _0x52(_0x53)local _0x54=math.clamp((_0x53.Position.X-_0x4x.AbsolutePosition.X)/_0x4x.AbsoluteSize.X,bit32.bxor(29083,29083),(0+1))local _0x55=math.floor(_0x4r+_0x54*(_0x4s-_0x4r)+0.5)_0x4z.Position=_0xd(_0x54,-0x7,0.5,-0x7)_0x4y.Size=_0xd(_0x54,bit32.bxor(51125,51125),bit32.bxor(23685,23684),0x0)_0x4w.Text=_0x4q.._d("88")..tostring(_0x55)_0x4u(_0x55)end _0x4z.InputBegan:Connect(function(i)if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then _0x51=true _0xx(_0x4z,0.12,{Size=_0xd(bit32.bxor(41398,41398),bit32.bxor(21495,21477),(0+0),0x12)})end end)_0x1.InputEnded:Connect(function(i)if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then _0x51=false _0xx(_0x4z,0.12,{Size=_0xd((0+0),(11+3),bit32.bxor(30655,30655),bit32.bxor(11726,11712))})end end)_0x1.InputChanged:Connect(function(i)if dragging and(i.UserInputType==Enum.UserInputType.MouseMovement or i.UserInputType==Enum.UserInputType.Touch)then update(i)end end)end local function _0x56(_0x57,_0x58,_0x59,_0x5a)local _0x5b=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x57)_0x5b.Size,_0x5b.BackgroundColor3,_0x5b.Text,_0x5b.AutoButtonColor=_0xd(bit32.bxor(29177,29176),bit32.bxor(41905,41905),0x0,bit32.bxor(2662,2628)),_0xa.Item,_d(""),false _0xo(_0x5b,bit32.bxor(38279,38287))_0xs(_0x5b,_0xa.Stroke,0x1)if _0x59 then _0x2k(_0x5b,_0x59,0xe,_0xa.Accent,_0xd((0+0),0xc,0.5,-bit32.bxor(1182,1177)))end local _0x5c=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x5b)_0x5c.Size,_0x5c.Position=_0xd(bit32.bxor(12063,12062),-(28+22),bit32.bxor(63534,63535),bit32.bxor(48066,48066)),_0xd(bit32.bxor(4098,4098),_0x59 and bit32.bxor(5790,5818)or(13+1),bit32.bxor(63170,63170),bit32.bxor(11878,11878))_0x5c.BackgroundTransparency=(0+1)_0x5c.Text,_0x5c.TextColor3,_0x5c.Font,_0x5c.TextSize=_0x58,_0xa.Text,Enum.Font.Gotham,(13+0)_0x5c.TextXAlignment=Enum.TextXAlignment.Left _0x1x(_0x5b,_0xa.Item,_0xa.ItemHover)_0x5b.MouseButton1Click:Connect(function()_0xx(_0x5b,0.1,{BackgroundColor3=_0xa.AccentDim})task.delay(0.12,function()_0xx(_0x5b,0.2,{BackgroundColor3=_0xa.Item})end)_0x5a()end)end local function _0x5d(_0x5e,_0x5f,_0x5g,_0x5h,_0x5i)local _0x5j=Instance.new(_d("eedac9c5cd"),_0x5e)_0x5j.Size,_0x5j.BackgroundTransparency,_0x5j.ClipsDescendants=_0xd(bit32.bxor(59258,59259),bit32.bxor(18833,18833),bit32.bxor(28646,28646),bit32.bxor(49267,49233)),bit32.bxor(16197,16196),false local _0x5k=Instance.new(_d("eedac9c5cd"),_0x5j)_0x5k.Size,_0x5k.BackgroundColor3,_0x5k.ZIndex=_0xd(bit32.bxor(57144,57145),(0+0),(0+0),0x22),_0xa.Item,(1+1)_0xo(_0x5k,(8+0))local _0x5l=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x5k)_0x5l.Size,_0x5l.BackgroundTransparency,_0x5l.Text,_0x5l.AutoButtonColor=_0xd((0+1),(0+0),bit32.bxor(4039,4038),(0+0)),(1+0),_d(""),false local _0x5m=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x5l)_0x5m.Size,_0x5m.Position=_0xd(0x1,-bit32.bxor(7889,7907),bit32.bxor(25535,25534),(0+0)),_0xd((0+0),(1+13),bit32.bxor(64379,64379),(0+0))_0x5m.BackgroundTransparency=0x1 _0x5m.Text,_0x5m.TextColor3,_0x5m.Font,_0x5m.TextSize=_0x5h or _0x5g[bit32.bxor(25328,25329)],_0xa.Text,Enum.Font.Gotham,0xd _0x5m.TextXAlignment=Enum.TextXAlignment.Left local _0x5n=_0x2k(_0x5l,_d("c9dadac7dffac1cfc0dc"),0xc,_0xa.SubText,_0xd((1+0),-(8+18),0.5,-0x6))_0x5n.Rotation=(81+9)local _0x5o=Instance.new(_d("eedac9c5cd"),_0x5j)_0x5o.Size,_0x5o.Position,_0x5o.BackgroundColor3,_0x5o.Visible,_0x5o.ClipsDescendants,_0x5o.ZIndex=_0xd((0+1),bit32.bxor(32385,32385),bit32.bxor(27364,27364),0x0),_0xd(bit32.bxor(64747,64747),0x0,(0+0),(34+4)),_0xa.Panel,false,true,bit32.bxor(23542,23543)_0xo(_0x5o,0x8)_0xs(_0x5o,_0xa.Stroke,bit32.bxor(32089,32088))local _0x5p=Instance.new(_d("fde1e4c1dbdce4c9d1c7dddc"),_0x5o)_0x5p.Padding=UDim.new(bit32.bxor(33572,33572),0x2)local _0x5q=false local _0x5r=#_0x5g*bit32.bxor(41846,41834)+0x8 for _,o in ipairs(_0x5g)do local _0x5s=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x5o)_0x5s.Size,_0x5s.Position,_0x5s.BackgroundColor3,_0x5s.Text,_0x5s.TextColor3,_0x5s.Font,_0x5s.TextSize,_0x5s.AutoButtonColor=_0xd((0+1),-0x8,(0+0),bit32.bxor(36784,36778)),_0xd(bit32.bxor(1362,1362),bit32.bxor(57259,57263),bit32.bxor(46937,46937),bit32.bxor(18897,18897)),_0xa.Item,o,_0xa.Text,Enum.Font.Gotham,(3+10),false _0xo(_0x5s,0x6)_0x1x(_0x5s,_0xa.Item,_0xa.ItemHover)_0x5s.MouseButton1Click:Connect(function()_0x5m.Text=o if _0x5q then _0x5q=false _0xb(_0x5o,_0xc(0.2),{Size=_0xd(0x1,(0+0),0x0,0x0)}):Play()_0xx(_0x5n,0.25,{Rotation=0x5a})_0xx(_0x5j,0.25,{Size=_0xd(0x1,0x0,(0+0),0x22)})task.delay(0.2,function()_0x5o.Visible=false end)end _0x5i(o)end)end _0x5l.MouseButton1Click:Connect(function()_0x5q=not _0x5q if _0x5q then _0x5o.Visible=true _0x5o.Size=_0xd((0+1),0x0,(0+0),0x0)_0xb(_0x5o,_0xc(0.25),{Size=_0xd(bit32.bxor(50804,50805),(0+0),bit32.bxor(10096,10096),_0x5r)}):Play()_0xx(_0x5n,0.25,{Rotation=bit32.bxor(35175,34921)})_0xx(_0x5j,0.25,{Size=_0xd(bit32.bxor(63068,63069),(0+0),(0+0),bit32.bxor(48077,48111)+_0x5r+0x4)})else _0xb(_0x5o,_0xc(0.2),{Size=_0xd(0x1,0x0,bit32.bxor(40098,40098),0x0)}):Play()_0xx(_0x5n,0.25,{Rotation=(90+0)})_0xx(_0x5j,0.25,{Size=_0xd(0x1,0x0,bit32.bxor(49765,49765),(8+26))})task.delay(0.2,function()_0x5o.Visible=false end)end end)end local function _0x5t(_0x5u,_0x5v,_0x5w,_0x5x)local _0x5y=Instance.new(_d("eedac9c5cd"),_0x5u)_0x5y.Size,_0x5y.BackgroundTransparency,_0x5y.ClipsDescendants=_0xd((1+0),bit32.bxor(21339,21339),(0+0),bit32.bxor(39898,39928)),bit32.bxor(44791,44790),false local _0x5z=Instance.new(_d("eedac9c5cd"),_0x5y)_0x5z.Size,_0x5z.BackgroundColor3,_0x5z.ZIndex=_0xd(bit32.bxor(45613,45612),(0+0),(0+0),0x22),_0xa.Item,(2+0)_0xo(_0x5z,bit32.bxor(45299,45307))local _0x60=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x5z)_0x60.Size,_0x60.BackgroundTransparency,_0x60.Text,_0x60.AutoButtonColor=_0xd(bit32.bxor(50348,50349),bit32.bxor(34701,34701),(1+0),0x0),bit32.bxor(33518,33519),_d(""),false local _0x61=Instance.new(_d("eedac9c5cd"),_0x60)_0x61.Size,_0x61.Position,_0x61.BackgroundColor3=_0xd(bit32.bxor(29562,29562),(13+1),bit32.bxor(11122,11122),(8+6)),_0xd(bit32.bxor(13144,13144),0xc,0.5,-0x7),_0x5w[bit32.bxor(42440,42441)].color _0xo(_0x61,bit32.bxor(43777,43781))_0xs(_0x61,Color3.new(0x1,bit32.bxor(21926,21927),(0+1)),0x1)local _0x62=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x60)_0x62.Size,_0x62.Position=_0xd(bit32.bxor(38977,38976),-0x50,bit32.bxor(27750,27751),(0+0)),_0xd((0+0),0x24,(0+0),0x0)_0x62.BackgroundTransparency=bit32.bxor(51077,51076)_0x62.Text,_0x62.TextColor3,_0x62.Font,_0x62.TextSize=_0x5w[(1+0)]._0x2m,_0xa.Text,Enum.Font.Gotham,0xd _0x62.TextXAlignment=Enum.TextXAlignment.Left local _0x63=_0x2k(_0x60,_d("c9dadac7dffac1cfc0dc"),0xc,_0xa.SubText,_0xd(0x1,-0x1a,0.5,-0x6))_0x63.Rotation=bit32.bxor(11309,11383)local _0x64=Instance.new(_d("eedac9c5cd"),_0x5y)_0x64.Size,_0x64.Position,_0x64.BackgroundColor3,_0x64.Visible,_0x64.ClipsDescendants,_0x64.ZIndex=_0xd(0x1,(0+0),bit32.bxor(27226,27226),bit32.bxor(27219,27219)),_0xd(0x0,bit32.bxor(13650,13650),(0+0),0x26),_0xa.Panel,false,true,bit32.bxor(44138,44139)_0xo(_0x64,(8+0))_0xs(_0x64,_0xa.Stroke,0x1)local _0x65=Instance.new(_d("fde1e4c1dbdce4c9d1c7dddc"),_0x64)_0x65.Padding=UDim.new(0x0,(1+1))local _0x66=false local _0x67=#_0x5w*0x1c+0x8 for _,entry in ipairs(_0x5w)do local _0x68=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x64)_0x68.Size,_0x68.Position,_0x68.BackgroundColor3,_0x68.Text,_0x68.AutoButtonColor=_0xd(0x1,-(7+1),(0+0),0x1a),_0xd(bit32.bxor(14322,14322),0x4,bit32.bxor(17965,17965),(0+0)),_0xa.Item,_d(""),false _0xo(_0x68,bit32.bxor(62114,62116))_0x1x(_0x68,_0xa.Item,_0xa.ItemHover)local _0x69=Instance.new(_d("eedac9c5cd"),_0x68)_0x69.Size,_0x69.Position,_0x69.BackgroundColor3=_0xd((0+0),0xc,bit32.bxor(10793,10793),0xc),_0xd((0+0),0x8,0.5,-0x6),entry.color _0xo(_0x69,0x3)_0xs(_0x69,Color3.new(0x1,bit32.bxor(21985,21984),bit32.bxor(56925,56924)),bit32.bxor(19684,19685))if entry.rainbow then local _0x6a=Instance.new(_d("fde1efdac9ccc1cdc6dc"),_0x69)_0x6a.Color=ColorSequence.new({ColorSequenceKeypoint.new((0+0),_0xe(0xff,bit32.bxor(1934,1934),0x0)),ColorSequenceKeypoint.new(0.2,_0xe((124+131),0xc8,(0+0))),ColorSequenceKeypoint.new(0.4,_0xe(0x0,(50+205),0x64)),ColorSequenceKeypoint.new(0.6,_0xe(0x0,bit32.bxor(11866,11922),0xff)),ColorSequenceKeypoint.new(0.8,_0xe(bit32.bxor(59184,59302),0x0,0xff)),ColorSequenceKeypoint.new((1+0),_0xe((1+254),(0+0),0x0)),})end local _0x6b=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x68)_0x6b.Size,_0x6b.Position=_0xd(0x1,-(16+24),(0+1),bit32.bxor(2784,2784)),_0xd(0x0,(13+17),0x0,(0+0))_0x6b.BackgroundTransparency=0x1 _0x6b.Text,_0x6b.TextColor3,_0x6b.Font,_0x6b.TextSize=entry._0x2m,_0xa.Text,Enum.Font.Gotham,bit32.bxor(55431,55434)_0x6b.TextXAlignment=Enum.TextXAlignment.Left _0x68.MouseButton1Click:Connect(function()_0x62.Text=entry._0x2m if entry.rainbow then _0x61.BackgroundColor3=_0xe((165+15),bit32.bxor(41114,41006),(144+36))else _0x61.BackgroundColor3=entry.color end if _0x66 then _0x66=false _0xb(_0x64,_0xc(0.2),{Size=_0xd((0+1),(0+0),0x0,bit32.bxor(7215,7215))}):Play()_0xx(_0x63,0.25,{Rotation=bit32.bxor(28682,28752)})_0xx(_0x5y,0.25,{Size=_0xd(bit32.bxor(38753,38752),(0+0),(0+0),0x22)})task.delay(0.2,function()_0x64.Visible=false end)end _0x5x(entry)end)end _0x60.MouseButton1Click:Connect(function()_0x66=not _0x66 if _0x66 then _0x64.Visible=true _0x64.Size=_0xd((1+0),(0+0),bit32.bxor(9879,9879),(0+0))_0xb(_0x64,_0xc(0.25),{Size=_0xd((0+1),(0+0),bit32.bxor(51687,51687),_0x67)}):Play()_0xx(_0x63,0.25,{Rotation=bit32.bxor(754,1020)})_0xx(_0x5y,0.25,{Size=_0xd(0x1,0x0,0x0,(12+22)+_0x67+(4+0))})else _0xb(_0x64,_0xc(0.2),{Size=_0xd(0x1,(0+0),(0+0),bit32.bxor(720,720))}):Play()_0xx(_0x63,0.25,{Rotation=bit32.bxor(12196,12286)})_0xx(_0x5y,0.25,{Size=_0xd(bit32.bxor(59817,59816),0x0,(0+0),(22+12))})task.delay(0.2,function()_0x64.Visible=false end)end end)end local _0x6c=Instance.new("Frame",_0x6d)_0x6c.Name=_0xh(_d("e6c7dcc1ced1e0c7c4cccdda"))_0x6c.AnchorPoint=Vector2.new(0x1,bit32.bxor(22876,22876))_0x6c.Position=_0xd(0x1,-(14+2),0x0,0x10)_0x6c.Size=_0xd(bit32.bxor(43791,43791),(65+185),0x0,(0+0))_0x6c.BackgroundTransparency=bit32.bxor(13649,13648)_0x6c.ZIndex=bit32.bxor(54467,54473)local _0x6e=Instance.new(_d("fde1e4c1dbdce4c9d1c7dddc"),_0x6c)_0x6e.SortOrder=Enum.SortOrder.LayoutOrder _0x6e.Padding=UDim.new(0x0,(0+8))_0x6e.VerticalAlignment=Enum.VerticalAlignment.Top local function _0x6f(_0x6g,_0x6h,_0x6i)local _0x6j=Instance.new(_d("eedac9c5cd"),_0x6c)_0x6j.Size=_0xd(bit32.bxor(1369,1368),bit32.bxor(3150,3150),0x0,0x44)_0x6j.Position=_0xd((1+0),0x12c,bit32.bxor(43211,43211),bit32.bxor(4824,4824))_0x6j.BackgroundColor3=_0xa.Panel _0x6j.ZIndex=bit32.bxor(58578,58584)_0x6j.LayoutOrder=-math.floor(tick()*bit32.bxor(22994,23098))_0xo(_0x6j,(0+10))_0xs(_0x6j,_0xa.Accent,1.5)local _0x6k=Instance.new(_d("eedac9c5cd"),_0x6j)_0x6k.Size,_0x6k.Position,_0x6k.BackgroundColor3=_0xd(bit32.bxor(33518,33518),0x3,0x1,-bit32.bxor(49344,49360)),_0xd(0x0,(0+8),(0+0),0x8),_0xa.Accent _0xo(_0x6k,0x2)local _0x6l=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x6j)_0x6l.Size,_0x6l.Position=_0xd((1+0),-(33+27),bit32.bxor(45104,45104),(15+7)),_0xd(0x0,bit32.bxor(57194,57214),bit32.bxor(6160,6160),bit32.bxor(19281,19289))_0x6l.BackgroundTransparency=0x1 _0x6l.Text,_0x6l.TextColor3,_0x6l.Font,_0x6l.TextSize=_0x6g,_0xa.Text,Enum.Font.GothamBold,0xe _0x6l.TextXAlignment=Enum.TextXAlignment.Left local _0x6m=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x6j)_0x6m.Size,_0x6m.Position=_0xd((1+0),-bit32.bxor(4520,4534),0x0,0x1c),_0xd(0x0,bit32.bxor(63742,63722),0x0,0x1e)_0x6m.BackgroundTransparency=(0+1)_0x6m.Text,_0x6m.TextColor3,_0x6m.Font,_0x6m.TextSize,_0x6m.TextWrapped=_0x6h,_0xa.SubText,Enum.Font.Gotham,bit32.bxor(26127,26115),true _0x6m.TextXAlignment=Enum.TextXAlignment.Left local _0x6n=Instance.new(_d("fccdd0dceadddcdcc7c6"),_0x6j)_0x6n.Size,_0x6n.Position,_0x6n.BackgroundColor3,_0x6n.Text,_0x6n.AutoButtonColor=_0xd(0x0,0x16,0x0,(21+1)),_0xd((0+1),-(15+15),(0+0),bit32.bxor(17054,17046)),_0xa.Item,_d(""),false _0xo(_0x6n,(2+3))_0xs(_0x6n,_0xa.Close,(0+1))_0x1x(_0x6n,_0xa.Item,_0xe(bit32.bxor(51381,51337),bit32.bxor(17298,17292),0x28))_0x25(_0x6n,0xa,_0xa.Close)_0xb(_0x6j,_0xc(0.3),{Position=_0xd(bit32.bxor(5668,5668),0x0,(0+0),0x0)}):Play()local _0x6o=false local function _0x6p()if _0x6o then return end _0x6o=true _0xb(_0x6j,_0xc(0.25),{Position=_0xd(bit32.bxor(8936,8937),0x12c,bit32.bxor(35126,35126),(0+0))}):Play()task.delay(0.25,function()_0x6j:Destroy()end)end _0x6n.MouseButton1Click:Connect(_0x6q)task.delay(_0x6i or bit32.bxor(15951,15948),_0x6q)end local _0x6r={}local function _0x6s(_0x6t,_0x6u)local _0x6v=Instance.new(_d("fccdd0dceadddcdcc7c6"),TabBar)_0x6v.Size,_0x6v.BackgroundColor3,_0x6v.Text,_0x6v.AutoButtonColor=_0xd(0.9,(0+0),(0+0),bit32.bxor(32350,32380)),_0xa.Item,_d(""),false _0xo(_0x6v,(8+0))local _0x6w=Instance.new(_d("eedac9c5cd"),_0x6v)_0x6w.Size,_0x6w.Position,_0x6w.AnchorPoint,_0x6w.BackgroundColor3,_0x6w.Visible=_0xd(0x0,bit32.bxor(56120,56123),0.6,bit32.bxor(33962,33962)),_0xd(0x0,0x0,0.5,(0+0)),Vector2.new(0x0,0.5),_0xa.Accent,false _0xo(_0x6w,(0+2))_0xl(_0x6w,_d("eac9cbc3cfdac7ddc6ccebc7c4c7da9b"))if _0x6u then local _0x6x=_0x2k(_0x6v,_0x6u,(8+6),_0xa.Accent,_0xd(0x0,0xc,0.5,-0x7))for _,f in ipairs(_0x6x:GetChildren())do if f:IsA(_d("eedac9c5cd"))then _0xl(f,_d("eac9cbc3cfdac7ddc6ccebc7c4c7da9b"))elseif f:IsA(_d("fde1fbdcdac7c3cd"))then _0xl(f,_d("ebc7c4c7da"))end end end local _0x6y=Instance.new(_d("fccdd0dce4c9cacdc4"),_0x6v)_0x6y.Size,_0x6y.Position=_0xd(0x1,-(38+2),bit32.bxor(60217,60216),(0+0)),_0xd((0+0),(16+20),(0+0),bit32.bxor(28889,28889))_0x6y.BackgroundTransparency=0x1 _0x6y.Text,_0x6y.TextColor3,_0x6y.Font,_0x6y.TextSize=_0x6t,_0xa.SubText,Enum.Font.GothamBold,(3+10)_0x6y.TextXAlignment=Enum.TextXAlignment.Left local _0x6z=Instance.new(_d("eedac9c5cd"),ContentScroll)_0x6z.Size,_0x6z.BackgroundTransparency,_0x6z.Visible=_0xd(0x1,(0+0),0x0,(0+0)),bit32.bxor(38527,38526),false _0x6z.AutomaticSize=Enum.AutomaticSize.Y local _0x70=Instance.new(_d("fde1e4c1dbdce4c9d1c7dddc"),_0x6z)_0x70.Padding=UDim.new(0x0,(7+1))local _0x71={Button=_0x6v,Page=_0x6z,Label=_0x6y,Highlight=_0x6w}_0x1x(_0x6v,_0xa.Item,_0xa.ItemHover)_0x6v.MouseButton1Click:Connect(function()for _,o in pairs(_0x6r)do _0xx(o.Button,0.2,{BackgroundColor3=_0xa.Item})_0xx(o.Label,0.2,{TextColor3=_0xa.SubText})o.Page.Visible=false o.Highlight.Visible=false end _0xx(_0x6v,0.2,{BackgroundColor3=_0xa.AccentDim})_0xx(_0x6y,0.2,{TextColor3=_0xa.Text})_0x6w.Visible=true _0x6z.Visible=true end)_0x6r[_0x6t]=_0x71 return _0x71 end local function _0x72(_0x73)_0xa.Accent=_0x73 _0xa.AccentDim=Color3.new(_0x73.R*0.55,_0x73.G*0.55,_0x73.B*0.55)_0xa.Stroke=Color3.new(_0x73.R*0.65,_0x73.G*0.65,_0x73.B*0.65)for _,e in ipairs(_0xj)do if e.obj and e.obj.Parent then _0xx(e.obj,0.25,{[e.prop]=_0x73})end end _0xx(mainStroke,0.25,{Color=_0x73})_0xx(miniStroke,0.25,{Color=_0x73})end local _0x74=_d("c3cdc4c9f7cdda99")local _0x75={{_0x6t=_d("efdddb"),parentPath=_d("efdddbe5c7c6dbdccdda"),childName=_d("efdddb")},{_0x6t=_d("e3dddb"),parentPath=_d("e3dddbe5c7c6dbdccdda"),childName=_d("e3dddb")},{_0x6t=_d("fbcbc9da"),parentPath=_d("fbc9c6ccc5c9c687e9dbc0d1"),childName=_d("fbcbc9da")},{_0x6t=_d("fbc9c6cce5c9c6"),parentPath=_d("fbc9c6ccc5c9c687e9dbc0d1"),childName=_d("fbc9c6cce5c9c6")},{_0x6t=_d("e4dddac3cdda"),parentPath=_d("fbc9c6ccc5c9c687e9dbc0d1"),childName=_d("e4dddac3cdda")},{_0x6t=_d("eac4c7c7cce5c9c6"),parentPath=_d("eac4c7c7ccc5c9c6e5c7c6dbdccdda"),childName=_d("eac4c7c7cce5c9c6")},{_0x6t=_d("e9dbc0d1"),parentPath=_d("fbc9c6ccc5c9c687e9dbc0d1"),childName=_d("e9dbc0d1")},{_0x6t=_d("e4c7dbdc"),parentPath=_d("e4c7dbdce5c7c6dbdccdda"),childName=_d("e4c7dbdc")},{_0x6t=_d("ecdddb"),parentPath=_d("ecdddbe5c7c6dbdccdda"),childName=_d("ecdddb")},}local _0x76={enabled=false,highlightEnabled=true,nameEnabled=true,distanceEnabled=true,healthEnabled=false,maxDistance=bit32.bxor(31651,31319),highlightColor=_0xe(bit32.bxor(47533,47442),(0+0),0x0),outlineColor=Color3.new(bit32.bxor(3972,3973),bit32.bxor(21054,21055),(0+1)),nameColor=Color3.new(bit32.bxor(46774,46775),bit32.bxor(5764,5765),(1+0)),distanceColor=_0xe((150+105),0xeb,bit32.bxor(53059,53112)),textSize=bit32.bxor(61859,61869),fillTransparency=0.5,}local _0x77={}for _,m in ipairs(_0x75)do _0x77[m._0x6t]=true end local function _0x78(_0x79)local _0x7a,_0x7b=pcall(function()return _0x7:FindFirstChild(_0x79,true)end)if _0x7a and _0x7b then return _0x7b end if _0x79:find("/")then local _0x7c=_0x7 for _,part in ipairs(string.split(_0x79,_d("87")))do _0x7c=_0x7c:FindFirstChild(part,true)if not _0x7c then return nil end end return _0x7c end return nil end local function _0x7d(_0x7e)local _0x7f=_0x78(_0x7e.parentPath)if not _0x7f then return nil end return _0x7f:FindFirstChild(_0x7e.childName,true)end local function _0x7g(_0x7h)if not _0x7h or not _0x7h:IsA(_d("e5c7cccdc4"))then return nil end return _0x7h:FindFirstChild(_d("e0ddc5c9c6c7c1ccfac7c7dcf8c9dadc"))or _0x7h:FindFirstChild(_d("e0cdc9cc"))or _0x7h.PrimaryPart end local function _0x7i(_0x7j)if not _0x7j then return nil end return _0x7j:FindFirstChildOfClass(_d("e0ddc5c9c6c7c1cc"))or _0x7j:FindFirstChild(_d("e0ddc5c9c6c7c1cc"))end local _0x7k={}local function _0x7l(_0x7m)local _0x7n=_0x7k[_0x7m]if _0x7n then if _0x7n.highlight and _0x7n.highlight.Parent then _0x7n.highlight:Destroy()end if _0x7n.billboard and _0x7n.billboard.Parent then _0x7n.billboard:Destroy()end _0x7k[_0x7m]=nil end end local function _0x7o()for n in pairs(_0x7k)do _0x7l(n)end end local function _0x7p(_0x7q,_0x7r)local _0x7s=Instance.new(_d("e0c1cfc0c4c1cfc0dc"))_0x7s.Name=_d("edfbf8e0c1cfc0c4c1cfc0dcf7").._0x7r _0x7s.Adornee=_0x7q _0x7s.FillColor=_0x76.highlightColor _0x7s.OutlineColor=_0x76.outlineColor _0x7s.FillTransparency=_0x76.fillTransparency _0x7s.OutlineTransparency=0x0 _0x7s.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop _0x7s.Parent=_0x7q return _0x7s end local function _0x7t(_0x7u,_0x7v)local _0x7w=_0x7u:FindFirstChild(_d("e0cdc9cc"))or _0x7g(_0x7u)if not _0x7w then return nil,nil end local _0x7x=Instance.new(_d("eac1c4c4cac7c9daccefddc1"))_0x7x.Name=_d("edfbf8eac7c9daccf7").._0x7v _0x7x.Adornee=_0x7w _0x7x.Size=_0xd(bit32.bxor(57343,57343),(175+25),0x0,bit32.bxor(61583,61619))_0x7x.StudsOffset=_0xf(bit32.bxor(400,400),0x3,bit32.bxor(63899,63899))_0x7x.AlwaysOnTop=true _0x7x.LightInfluence=0x0 _0x7x.MaxDistance=_0x76.maxDistance*(6+4)_0x7x.Parent=_0x7w local _0x7y=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x7y.Size,_0x7y.BackgroundTransparency=_0xd(bit32.bxor(45776,45777),0x0,0x0,bit32.bxor(6148,6162)),bit32.bxor(28568,28569)_0x7y.Text,_0x7y.TextColor3,_0x7y.TextStrokeColor3,_0x7y.TextStrokeTransparency,_0x7y.Font,_0x7y.TextSize,_0x7y.Visible=_0x7v,_0x76.nameColor,Color3.new(0x0,bit32.bxor(27789,27789),0x0),(0+0),Enum.Font.GothamBold,_0x76.textSize,_0x76.nameEnabled _0x7y.Parent=_0x7x local _0x7z=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x7z.Size,_0x7z.Position,_0x7z.BackgroundTransparency=_0xd(bit32.bxor(53946,53947),bit32.bxor(39029,39029),0x0,0x12),_0xd(0x0,(0+0),(0+0),(2+20)),(0+1)_0x7z.Text,_0x7z.TextColor3,_0x7z.TextStrokeColor3,_0x7z.TextStrokeTransparency,_0x7z.Font,_0x7z.TextSize,_0x7z.Visible=_d("98c5"),_0x76.distanceColor,Color3.new(bit32.bxor(27660,27660),bit32.bxor(53822,53822),0x0),(0+0),Enum.Font.GothamSemibold,_0x76.textSize-0x2,_0x76.distanceEnabled _0x7z.Parent=_0x7x local _0x80=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x80.Size,_0x80.Position,_0x80.BackgroundTransparency=_0xd((1+0),bit32.bxor(26940,26940),(0+0),(15+3)),_0xd(bit32.bxor(63916,63916),(0+0),0x0,0x28),(1+0)_0x80.Text,_0x80.TextColor3,_0x80.TextStrokeColor3,_0x80.TextStrokeTransparency,_0x80.Font,_0x80.TextSize,_0x80.Visible=_d(""),_0xe(bit32.bxor(32644,32644),bit32.bxor(15182,15281),0x0),Color3.new(bit32.bxor(10619,10619),0x0,0x0),0x0,Enum.Font.GothamSemibold,_0x76.textSize-bit32.bxor(6705,6707),_0x76.healthEnabled _0x80.Parent=_0x7x return _0x7x,{nameLabel=_0x7y,distLabel=_0x7z,healthLabel=_0x80}end local function _0x81(_0x82)local _0x83=_0x82._0x83 local _0x84=_0x7d(_0x82)if not _0x84 then _0x7l(_0x83)return end if not _0x76.enabled or not _0x77[_0x83]then _0x7l(_0x83)return end local _0x85=_0x7g(_0x84)if not _0x85 then _0x7l(_0x83)return end local _0x86=(_0x9.CFrame.Position-_0x85.Position).Magnitude if _0x86>_0x76.maxDistance then _0x7l(_0x83)return end local _0x87=_0x7k[_0x83]if not _0x87 then _0x87={}_0x7k[_0x83]=_0x87 end if _0x76.highlightEnabled then if not _0x87.highlight or not _0x87.highlight.Parent then _0x87.highlight=_0x7p(_0x84,_0x83)else _0x87.highlight.FillColor=_0x76.highlightColor _0x87.highlight.OutlineColor=_0x76.outlineColor _0x87.highlight.FillTransparency=_0x76.fillTransparency end elseif _0x87.highlight then _0x87.highlight:Destroy()_0x87.highlight=nil end if _0x76.nameEnabled or _0x76.distanceEnabled or _0x76.healthEnabled then if not _0x87.billboard or not _0x87.billboard.Parent then _0x87.billboard,_0x87.labels=_0x7t(_0x84,_0x83)end if _0x87.labels then local _0x88,_0x89,_0x8a=_0x87.labels.nameLabel,_0x87.labels.distLabel,_0x87.labels.healthLabel if _0x88 then _0x88.Text=_0x83 _0x88.TextColor3=_0x76.nameColor _0x88.TextSize=_0x76.textSize _0x88.Visible=_0x76.nameEnabled end if _0x89 then _0x89.Text=string.format(_d("8d8698ce88c5"),_0x86)_0x89.TextColor3=_0x76.distanceColor _0x89.Visible=_0x76.distanceEnabled end if _0x8a then if _0x76.healthEnabled then local _0x8b=_0x7i(_0x84)if _0x8b and _0x8b.Health>(0+0)then _0x8a.Text=string.format(_d("e0f892888d8698ce8887888d8698ce"),_0x8b.Health,_0x8b.MaxHealth)local _0x8c=_0x8b.Health/_0x8b.MaxHealth _0x8a.TextColor3=_0x8c>0.5 and _0xe((0+0),bit32.bxor(9534,9665),0x0)or(_0x8c>0.25 and _0xe(0xff,bit32.bxor(17150,16897),0x0)or _0xe((145+110),(0+0),(0+0)))else _0x8a.Text=_d("")end end _0x8a.Visible=_0x76.healthEnabled end end elseif _0x87.billboard then _0x87.billboard:Destroy()_0x87.billboard=nil _0x87.labels=nil end end local function _0x8d()for _,_0x82 in ipairs(_0x75)do _0x81(_0x82)end end local _0x8e={enabled=false,highlightEnabled=true,nameEnabled=true,distanceEnabled=true,healthEnabled=true,maxDistance=0x3e8,highlightColor=_0xe(0x0,(220+35),(38+89)),outlineColor=Color3.new(bit32.bxor(17460,17461),0x1,(1+0)),nameColor=_0xe(0x0,(238+17),bit32.bxor(2102,2121)),distanceColor=_0xe(0xff,(208+27),0x3b),textSize=(2+12),fillTransparency=0.5,showSelf=false,}local _0x8f={}local function _0x8g(_0x8h)local _0x8i=_0x8f[_0x8h]if _0x8i then if _0x8i.highlight and _0x8i.highlight.Parent then _0x8i.highlight:Destroy()end if _0x8i.billboard and _0x8i.billboard.Parent then _0x8i.billboard:Destroy()end _0x8f[_0x8h]=nil end end local function _0x8j()for _0x2l in pairs(_0x8f)do _0x8g(_0x2l)end end local function _0x8k(_0x8l,_0x8m)local _0x8n=Instance.new(_d("e0c1cfc0c4c1cfc0dc"))_0x8n.Name=_d("f8c4c9d1cddaedfbf8f7e0e4f7").._0x8m _0x8n.Adornee=_0x8l _0x8n.FillColor=_0x8e.highlightColor _0x8n.OutlineColor=_0x8e.outlineColor _0x8n.FillTransparency=_0x8e.fillTransparency _0x8n.OutlineTransparency=(0+0)_0x8n.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop _0x8n.Parent=_0x8l return _0x8n end local function _0x8o(_0x8p,_0x8q)local _0x8r=_0x8p:FindFirstChild(_d("e0cdc9cc"))if not _0x8r then return nil,nil end local _0x8s=Instance.new(_d("eac1c4c4cac7c9daccefddc1"))_0x8s.Name=_d("f8c4c9d1cddaedfbf8f7eac7c9daccf7").._0x8q _0x8s.Adornee=_0x8r _0x8s.Size=_0xd(0x0,0xc8,0x0,0x3c)_0x8s.StudsOffset=_0xf(0x0,0x3,(0+0))_0x8s.AlwaysOnTop=true _0x8s.LightInfluence=(0+0)_0x8s.MaxDistance=_0x8e.maxDistance*0xa _0x8s.Parent=_0x8r local _0x8t=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x8t.Size,_0x8t.BackgroundTransparency=_0xd(bit32.bxor(4513,4512),0x0,0x0,0x16),(1+0)_0x8t.Text,_0x8t.TextColor3,_0x8t.TextStrokeColor3,_0x8t.TextStrokeTransparency,_0x8t.Font,_0x8t.TextSize,_0x8t.Visible=_0x8q,_0x8e.nameColor,Color3.new(bit32.bxor(50515,50515),bit32.bxor(59586,59586),0x0),0x0,Enum.Font.GothamBold,_0x8e.textSize,_0x8e.nameEnabled _0x8t.Parent=_0x8s local _0x8u=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x8u.Size,_0x8u.Position,_0x8u.BackgroundTransparency=_0xd(bit32.bxor(26495,26494),0x0,bit32.bxor(12755,12755),bit32.bxor(35218,35200)),_0xd((0+0),(0+0),(0+0),(14+8)),0x1 _0x8u.Text,_0x8u.TextColor3,_0x8u.TextStrokeColor3,_0x8u.TextStrokeTransparency,_0x8u.Font,_0x8u.TextSize,_0x8u.Visible=_d("98c5"),_0x8e.distanceColor,Color3.new(0x0,0x0,bit32.bxor(51977,51977)),(0+0),Enum.Font.GothamSemibold,_0x8e.textSize-bit32.bxor(47978,47976),_0x8e.distanceEnabled _0x8u.Parent=_0x8s local _0x8v=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x8v.Size,_0x8v.Position,_0x8v.BackgroundTransparency=_0xd(bit32.bxor(46723,46722),0x0,0x0,0x12),_0xd((0+0),(0+0),bit32.bxor(27495,27495),bit32.bxor(3120,3096)),0x1 _0x8v.Text,_0x8v.TextColor3,_0x8v.TextStrokeColor3,_0x8v.TextStrokeTransparency,_0x8v.Font,_0x8v.TextSize,_0x8v.Visible=_d(""),_0xe(0x0,bit32.bxor(40354,40285),0x0),Color3.new(bit32.bxor(63200,63200),0x0,(0+0)),bit32.bxor(40055,40055),Enum.Font.GothamSemibold,_0x8e.textSize-(1+1),_0x8e.healthEnabled _0x8v.Parent=_0x8s return _0x8s,{nameLbl=_0x8t,distLbl=_0x8u,hpLbl=_0x8v}end local function _0x8w(_0x8x)if _0x8x==_0x8 and not _0x8e.showSelf then _0x8g(_0x8x)return end local _0x8y=_0x8x.Character if not _0x8y or not _0x8y:IsA(_d("e5c7cccdc4"))then _0x8g(_0x8x)return end local _0x8z=_0x8y:FindFirstChild(_d("e0ddc5c9c6c7c1ccfac7c7dcf8c9dadc"))or _0x8y.PrimaryPart if not _0x8z then _0x8g(_0x8x)return end local _0x90=(_0x9.CFrame.Position-_0x8z.Position).Magnitude if _0x90>_0x8e.maxDistance then _0x8g(_0x8x)return end local _0x91=_0x8f[_0x8x]if not _0x91 then _0x91={}_0x8f[_0x8x]=_0x91 end if _0x8e.highlightEnabled then if not _0x91.highlight or not _0x91.highlight.Parent then _0x91.highlight=_0x8k(_0x8y,_0x8x.Name)else _0x91.highlight.FillColor=_0x8e.highlightColor _0x91.highlight.OutlineColor=_0x8e.outlineColor _0x91.highlight.FillTransparency=_0x8e.fillTransparency end elseif _0x91.highlight then _0x91.highlight:Destroy()_0x91.highlight=nil end if _0x8e.nameEnabled or _0x8e.distanceEnabled or _0x8e.healthEnabled then if not _0x91.billboard or not _0x91.billboard.Parent then _0x91.billboard,_0x91.labels=_0x8o(_0x8y,_0x8x.Name)end if _0x91.labels then local _0x92,_0x93,_0x94=_0x91.labels.nameLbl,_0x91.labels.distLbl,_0x91.labels.hpLbl if _0x92 then _0x92.Text=_0x8x.Name _0x92.TextColor3=_0x8e.nameColor _0x92.TextSize=_0x8e.textSize _0x92.Visible=_0x8e.nameEnabled end if _0x93 then _0x93.Text=string.format(_d("8d8698ce88c5"),_0x90)_0x93.TextColor3=_0x8e.distanceColor _0x93.Visible=_0x8e.distanceEnabled end if _0x94 then if _0x8e.healthEnabled then local _0x95=_0x8y:FindFirstChildOfClass(_d("e0ddc5c9c6c7c1cc"))if _0x95 and _0x95.Health>bit32.bxor(63391,63391)then _0x94.Text=string.format(_d("e0f892888d8698ce8887888d8698ce"),_0x95.Health,_0x95.MaxHealth)local _0x96=_0x95.Health/_0x95.MaxHealth _0x94.TextColor3=_0x96>0.5 and _0xe(0x0,(212+43),(0+0))or(_0x96>0.25 and _0xe(0xff,0xff,bit32.bxor(33468,33468))or _0xe((63+192),bit32.bxor(21776,21776),bit32.bxor(25418,25418)))else _0x94.Text=_d("")end end _0x94.Visible=_0x8e.healthEnabled end end elseif _0x91.billboard then _0x91.billboard:Destroy()_0x91.billboard=nil _0x91.labels=nil end end local function _0x97()if not _0x8e.enabled then _0x8j()return end local _0x98=_0x2:GetPlayers()for _0x2l in pairs(_0x8f)do if not table.find(_0x98,_0x2l)then _0x8g(_0x2l)end end for _,_0x2l in ipairs(_0x98)do _0x8w(_0x2l)end end local _0x99={}local function _0x9a(_0x9b)if _0x99[_0x9b]then for _,o in ipairs(_0x99[_0x9b])do if o and o.Parent then o:Destroy()end end _0x99[_0x9b]=nil end end local function _0x9c(_0x9d)return _0x9d and string.lower(_0x9d.Name)==string.lower(_0x74)end local function _0x9e()for _0x8x in pairs(_0x99)do if not _0x8x.Parent or not _0x9c(_0x8x)then _0x9a(_0x8x)end end for _,_0x8x in ipairs(_0x2:GetPlayers())do if _0x9c(_0x8x)and _0x8x~=_0x8 then local _0x9f=_0x8x.Character if _0x9f and _0x9f:IsA(_d("e5c7cccdc4"))then local _0x9g=_0x9f:FindFirstChild(_d("e0ddc5c9c6c7c1ccfac7c7dcf8c9dadc"))or _0x9f.PrimaryPart local _0x9h=_0x9f:FindFirstChild(_d("e0cdc9cc"))if _0x9g and _0x9h then if not _0x99[_0x8x]then _0x99[_0x8x]={}end local _0x9i=_0x9f:FindFirstChild(_d("e9dddcc0c7daedfbf8f7e0e4f7").._0x8x.Name)if not _0x9i then _0x9i=Instance.new(_d("e0c1cfc0c4c1cfc0dc"))_0x9i.Name=_d("e9dddcc0c7daedfbf8f7e0e4f7").._0x8x.Name _0x9i.Adornee=_0x9f _0x9i.FillColor=_0xe(bit32.bxor(42600,42647),(40+175),0x0)_0x9i.OutlineColor=Color3.new((0+1),(1+0),bit32.bxor(5365,5364))_0x9i.FillTransparency=0.45 _0x9i.OutlineTransparency=0x0 _0x9i.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop _0x9i.Parent=_0x9f table.insert(_0x99[_0x8x],_0x9i)end local _0x9j=_0x9h:FindFirstChild(_d("e9dddcc0c7daedfbf8f7eac7c9daccf7").._0x8x.Name)local _0x9k=(_0x9.CFrame.Position-_0x9g.Position).Magnitude if not _0x9j then _0x9j=Instance.new(_d("eac1c4c4cac7c9daccefddc1"))_0x9j.Name=_d("e9dddcc0c7daedfbf8f7eac7c9daccf7").._0x8x.Name _0x9j.Adornee=_0x9h _0x9j.Size=_0xd(bit32.bxor(14169,14169),(127+93),(0+0),0x3c)_0x9j.StudsOffset=_0xf(bit32.bxor(58843,58843),0x3,(0+0))_0x9j.AlwaysOnTop=true _0x9j.LightInfluence=0x0 _0x9j.Parent=_0x9h local _0x9l=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x9l.Size,_0x9l.BackgroundTransparency=_0xd(bit32.bxor(27343,27342),0x0,(0+0),0x1a),bit32.bxor(27845,27844)_0x9l.Text,_0x9l.TextColor3,_0x9l.TextStrokeColor3,_0x9l.TextStrokeTransparency,_0x9l.Font,_0x9l.TextSize=_d("402c324e34044c153440282d"),_0xe((110+145),0xd7,(0+0)),Color3.new(bit32.bxor(21637,21637),(0+0),bit32.bxor(28284,28284)),(0+0),Enum.Font.GothamBold,bit32.bxor(64407,64387)_0x9l.Parent=_0x9j local _0x9m=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x9m.Size,_0x9m.Position,_0x9m.BackgroundTransparency=_0xd((1+0),bit32.bxor(46864,46864),0x0,bit32.bxor(31304,31322)),_0xd((0+0),0x0,bit32.bxor(19104,19104),(4+22)),0x1 _0x9m.Text,_0x9m.TextColor3,_0x9m.TextStrokeColor3,_0x9m.TextStrokeTransparency,_0x9m.Font,_0x9m.TextSize=_0x8x.Name,Color3.new(bit32.bxor(58207,58206),bit32.bxor(11159,11158),0x1),Color3.new(bit32.bxor(2077,2077),(0+0),(0+0)),(0+0),Enum.Font.GothamSemibold,0xe _0x9m.Parent=_0x9j local _0x9n=Instance.new(_d("fccdd0dce4c9cacdc4"))_0x9n.Name=_d("ecc1dbdce4c9cacdc4")_0x9n.Size,_0x9n.Position,_0x9n.BackgroundTransparency=_0xd(0x1,bit32.bxor(5525,5525),bit32.bxor(37111,37111),(5+11)),_0xd((0+0),bit32.bxor(21505,21505),0x0,0x2c),0x1 _0x9n.Text,_0x9n.TextColor3,_0x9n.TextStrokeColor3,_0x9n.TextStrokeTransparency,_0x9n.Font,_0x9n.TextSize=_d("98c5"),_0xe((104+151),0xeb,(37+22)),Color3.new((0+0),bit32.bxor(53376,53376),bit32.bxor(61925,61925)),bit32.bxor(27808,27808),Enum.Font.GothamSemibold,0xc _0x9n.Parent=_0x9j table.insert(_0x99[_0x8x],_0x9j)else local _0x9o=_0x9j:FindFirstChild(_d("ecc1dbdce4c9cacdc4"))if _0x9o then _0x9o.Text=string.format(_d("8d8698ce88c5"),_0x9k)end end end else _0x9a(_0x8x)end end end end local _0x9p,_0x9q=bit32.bxor(18092,18092),(0+0)_0x3.Heartbeat:Connect(function(dt)pcall(_0x9e)if _0x76.enabled then _0x9p=_0x9p+dt if _0x9p>=0.1 then _0x9p=0x0 _0x8d()end end if _0x8e.enabled then _0x9q=_0x9q+dt if _0x9q>=0.1 then _0x9q=(0+0)_0x97()end end end)_0x2.PlayerRemoving:Connect(function(_0x8x)_0x8g(_0x8x)_0x9a(_0x8x)end)local _0x9r=false local _0x9s={_d("fbcbc9dae2ddc5d8dbcbc9dacd"),_d("fbc9c6ccc5c9c6e2ddc5d8dbcbc9dacd"),_d("e4dddac3cddae3c1c4c4"),_d("e4c7dbdce2ddc5d8dbcbc9dacd"),_d("e3dddbe2ddc5d8dbcbc9dacd"),_d("efdddbe2ddc5d8dbcbc9dacd"),_d("ecdddbe2ddc5d8dbcbc9dacd"),_d("eac4c7c7cce5c9c6e3c1c4c4"),_d("e9dbc0d1e2ddc5d8dbcbc9dacd")}local _0x9t={_d("f8c4c9d1fbcbc9dae2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1fbc9dffaddc6c6cddae2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1fbc9c6ccc5c9c6e2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1e4dddac3cddae2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1e4c7dbdce2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1e3dddbe2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1efdddbe2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1ecdddbe2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1eac4c7c7cce5c9c6e2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4"),_d("f8c4c9d1e9dbc0d1e2ddc5d8dbcbc9dacde9c6c1c5e4c7cbc9c4")}local function _0x9u()local _0x9v=_0x7:FindFirstChild(_d("e2ddc5d8dbcbc9dacddb"))if _0x9v then for _,n in ipairs(_0x9s)do local _0x9w=_0x9v:FindFirstChild(n)if _0x9w then pcall(function()_0x9w:Destroy()end)end end for _,obj in ipairs(_0x9x:GetChildren())do local _0x9y=obj.Name if _0x9y:match(_d("e2ddc5d8dbcbc9dacd"))or _0x9y:match(_d("e3c1c4c4"))or _0x9y:match(_d("fbcbc9dacd"))then pcall(function()obj:Destroy()end)end end end local _0x9z=_0x8:FindFirstChild("PlayerScripts")if _0x9z then for _,obj in ipairs(_0x9z:GetChildren())do if table.find(_0x9t,obj.Name)then pcall(function()if obj:IsA(_d("e4c7cbc9c4fbcbdac1d8dc"))or obj:IsA(_d("fbcbdac1d8dc"))then obj.Enabled=false end obj:Destroy()end)end end end local _0xa0=_0x8:FindFirstChild("PlayerGui")if _0xa0 then for _,gui in ipairs(_0xa0:GetChildren())do local _0xa1=gui.Name if _0xa1:match(_d("e2ddc5d8dbcbc9dacd"))or _0xa1:match(_d("fbcbc9dacd"))or _0xa1:match(_d("e2ddc5d8fbcbc9dacd"))then pcall(function()gui:Destroy()end)end end end end local function _0xa2(_0xa3)if _0xa3 then if _0x9r then return end _0x9r=true _0x9u()task.spawn(function()while _0x9r do _0x9u()task.wait(0.3)end end)else _0x9r=false end end local _0xa4={walkSpeed=bit32.bxor(7524,7500),jumpPower=bit32.bxor(65191,65179),gravity=(131+65),godMode=false}local function _0xa5()local _0xa6=_0x8.Character return _0xa6 and _0xa6:FindFirstChildOfClass(_d("e0ddc5c9c6c7c1cc"))end local function _0xa7()local _0xa8=_0xa5()if _0xa8 then pcall(function()_0xa8.WalkSpeed=_0xa4.walkSpeed end)end end local function _0xa9()local _0xaa=_0xa5()if _0xaa then pcall(function()_0xaa.UseJumpPower=true _0xaa.JumpPower=_0xa4.jumpPower end)pcall(function()_0xaa.JumpHeight=_0xa4.jumpPower/bit32.bxor(55482,55485)end)end end local _0xab=nil local function _0xac(_0xad)if _0xad then if _0xab then return end _0xab=_0x1.JumpRequest:Connect(function()local _0xae=getHum()if _0xae then pcall(function()_0xae:ChangeState(Enum.HumanoidStateType.Jumping)end)end end)elseif _0xab then _0xab:Disconnect()_0xab=nil end end local function _0xaf()pcall(function()_0x7.Gravity=playerSettings.gravity end)end local _0xag=true local function _0xah()if _0xag then _0x8.CameraMode=Enum.CameraMode.Classic _0x8.CameraMinZoomDistance=0.5 _0x8.CameraMaxZoomDistance=0x80 else _0x8.CameraMode=Enum.CameraMode.LockFirstPerson _0x8.CameraMinZoomDistance=0.5 _0x8.CameraMaxZoomDistance=0.5 end end task.spawn(function()task.wait(bit32.bxor(2916,2917))if _0x8.CameraMode==Enum.CameraMode.LockFirstPerson then _0xah()end end)_0x8.CharacterAdded:Connect(function()task.wait(0.5)_0xah()applySpeed()applyJump()if playerSettings.godMode then local _0xai=getHum()if _0xai then pcall(function()_0xai.BreakJointsOnDeath=false end)end end end)if _0x8.Character then ApplyCamera()end task.spawn(function()task.wait(0.5)applySpeed()applyJump()end)local _0xaj={brightnessEnabled=false,brightnessLevel=0x2}local _0xak={[(0+1)]={brightness=(3+0),clockTime=bit32.bxor(36956,36946),fogEnd=0x186a0,ambient=_0xe(bit32.bxor(24883,24997),(86+64),(48+102)),outdoorAmbient=_0xe(0x96,0x96,bit32.bxor(33484,33370))},[0x2]={brightness=bit32.bxor(15510,15504),clockTime=0xc,fogEnd=bit32.bxor(1016245,50165),ambient=_0xe((93+107),0xc8,bit32.bxor(18972,19156)),outdoorAmbient=_0xe(bit32.bxor(16629,16445),0xc8,0xc8)},[0x3]={brightness=(18+2),clockTime=bit32.bxor(12728,12724),fogEnd=0x989680,ambient=_0xe(0xff,bit32.bxor(53313,53438),bit32.bxor(28340,28235)),outdoorAmbient=_0xe(0xff,bit32.bxor(29938,29709),(112+143))},}local _0xal={}local function _0xam()local _0xan=_0xak[_0xaj.brightnessLevel]if not _0xan then return end if not next(_0xal)then pcall(function()_0xal.Brightness=_0x5.Brightness _0xal.ClockTime=_0x5.ClockTime _0xal.FogEnd=_0x5.FogEnd _0xal.Ambient=_0x5.Ambient _0xal.OutdoorAmbient=_0x5.OutdoorAmbient _0xal.GlobalShadows=_0x5.GlobalShadows end)end pcall(function()_0x5.Brightness=_0xan.brightness _0x5.ClockTime=_0xan.clockTime _0x5.FogEnd=_0xan.fogEnd _0x5.Ambient=_0xan.ambient _0x5.OutdoorAmbient=_0xan.outdoorAmbient _0x5.GlobalShadows=false end)end local function _0xao()if not next(lightingOriginal)then return end pcall(function()_0x5.Brightness=lightingOriginal.Brightness _0x5.ClockTime=lightingOriginal.ClockTime _0x5.FogEnd=lightingOriginal.FogEnd _0x5.Ambient=lightingOriginal.Ambient _0x5.OutdoorAmbient=lightingOriginal.OutdoorAmbient _0x5.GlobalShadows=lightingOriginal.GlobalShadows end)lightingOriginal={}end local function _0xap()local _0xaq=_0x6:FindFirstChild(_d("facdd9ddcddbdcfacddbd8c9dfc6"))or _0x6:WaitForChild(_d("facdd9ddcddbdcfacddbd8c9dfc6"),bit32.bxor(2507,2504))if not _0xaq then _0x6f(_d("402f1c4d39154f241c4d0538"),_d("4e34024e21164d201888facdd9ddcddbdcfacddbd8c9dfc6"),bit32.bxor(11590,11589))return false end return pcall(function()if _0xaq:IsA(_d("facdc5c7dccdeddecdc6dc"))then _0xaq:FireServer()elseif _0xaq:IsA(_d("facdc5c7dccdeeddc6cbdcc1c7c6"))then _0xaq:InvokeServer()elseif _0xaq:IsA(_d("eac1c6ccc9cac4cdeddecdc6dc"))then _0xaq:Fire()end end)end local function _0xar()local _0xas=_0x8:FindFirstChild(_d("f8c4c9d1cddaefddc1"))if not _0xas then return false end local _0xat=nil pcall(function()for _,obj in ipairs(_0xas:GetDescendants())do if obj:IsA(_d("efddc1eadddcdcc7c6"))and obj.Visible then local _0xau=string.lower(obj.Name)local _0xav=obj:IsA(_d("fccdd0dceadddcdcc7c6"))and string.lower(obj.Text or _d(""))or _d("")if _0xau:find(_d("dacddbd8c9dfc6"))or _0xau:find(_d("dacddec1decd"))or _0xau:find(_d("dacdcac1dadcc0"))or _0xav:find(_d("4d0c254e1c13"))or _0xav:find(_d("412f254f3c37"))or _0xav:find(_d("dacddbd8c9dfc6"))or _0xav:find(_d("dacddec1decd"))then _0xat=obj break end end end end)if _0xat then return pcall(function()_0xat.MouseButton1Click:Fire()_0xat.Activated:Fire()end)end return false end local function _0xaw()if clickGameRespawnButton()then return true end return _0xap()end local _0xax=nil local function _0xay(_0xaz)if _0xaz then if _0xax then return end _0xax=_0x8.CharacterAdded:Connect(function(char)local _0xb0=char:WaitForChild(_d("e0ddc5c9c6c7c1cc"),bit32.bxor(5943,5938))if not _0xb0 then return end _0xb0.Died:Connect(function()task.wait(0.5)_0xap()end)end)elseif _0xax then _0xax:Disconnect()_0xax=nil end end local _0xb1={red=_0xe(bit32.bxor(29303,29320),0x0,bit32.bxor(13527,13527)),green=_0xe(0x0,(106+149),(0+0)),blue=_0xe((0+0),0x0,bit32.bxor(51700,51467)),yellow=_0xe(bit32.bxor(19998,20193),(173+82),(0+0)),purple=_0xe((76+52),bit32.bxor(41402,41402),bit32.bxor(65226,65077)),cyan=_0xe(0x0,(19+236),(59+196)),white=_0xe(0xff,bit32.bxor(37528,37479),bit32.bxor(25403,25540)),black=_0xe((0+0),bit32.bxor(59291,59291),0x0),orange=_0xe(0xff,bit32.bxor(52822,52928),bit32.bxor(25948,25952)),sgreen=_0xe((0+0),(17+238),0x7f),}local _0xb2=false local _0xb3=nil local function _0xb4(_0xb5)_0xb2=_0xb5 if _0xb3 then _0xb3:Disconnect()_0xb3=nil end if _0xb5 then local _0xb6=(0+0)_0xb3=_0x3.Heartbeat:Connect(function(dt)_0xb6=(_0xb6+dt*0.15)%0x1 local _0xb7=Color3.fromHSV(_0xb6,0.7,0x1)_0xa.Accent=_0xb7 _0xa.AccentDim=Color3.new(_0xb7.R*0.55,_0xb7.G*0.55,_0xb7.B*0.55)_0xa.Stroke=Color3.new(_0xb7.R*0.65,_0xb7.G*0.65,_0xb7.B*0.65)for _,e in ipairs(_0xj)do if e.obj and e.obj.Parent then e.obj[e.prop]=_0xb7 end end mainStroke.Color=_0xb7 miniStroke.Color=_0xb7 end)end end local _0xb8=_0x6s("怪物透视","home")local _0xb9=_0xb8.Page sectionTitle(_0xb9,_d("edfbf8884e28134d14284d2d1b"),_d("cac7c4dc"))toggle(_0xb9,_d("edfbf8884e28134d14284d2d1b"),false,function(_0xaz)_0x76.enabled=_0xaz if not _0xaz then _0x7o()end _0x6f(_d("402f1c4d39154f241c4d0538"),_0xaz and _d("edfbf8884d1f1a4d14284d3807")or _d("edfbf8884d1f1a4d2d1b413f05"),0x3)end)sectionTitle(_0xba,"显示选项","shield")toggle(_0xba,_d("4e28024f21014103304c1206"),true,function(v)_0x76.highlightEnabled=v end)toggle(_0xbb,"怪物名字",true,function(v)_0x76.nameEnabled=v end)toggle(P1,_d("401f354f0e134e30164f0c12"),true,function(v)_0x76.distanceEnabled=v end)toggle(_0xbc,"血量显示",false,function(v)_0x76.healthEnabled=v end)sectionTitle(P1,_d("4d272a4e3d1840182b40222a"),_d("dbcddcdcc1c6cfdb"))slider(P1,_d("4e34284d0c0f4e30164f0c12401f354f0e13"),0x32,bit32.bxor(16122,14634),(41+459),function(v)_0x76.maxDistance=v end)slider(_0xbd,"填充透明度",0,100,50,function(v)_0x76.fillTransparency=v/bit32.bxor(25572,25472)end)slider(P1,_d("4e3e2f4d053f4d0c0f4d1827"),(6+4),bit32.bxor(43853,43861),0xe,function(v)_0x76.textSize=v end)sectionTitle(_0xbe,"怪物单独开关","bolt")for _,m in ipairs(_0x75)do toggle(_0xbe,m._0x6t,true,function(v)_0x77[m._0x6t]=v end)end local _0xbf=_0x6s("颜色设置","palette")local _0xbg=_0xbf.Page sectionTitle(_0xbg,_d("4e28024f2101edfbf8410a3440211a"),_d("d8c9c4cddcdccd"))colorDropdown(_0xbg,_d("4103304c12064d09034d2d2d410a3440211a"),{{_0x6t=_d("4f120a40211a"),color=ColorTables.red},{_0x6t=_d("4f131740211a"),color=ColorTables.green},{_0x6t=_d("403b3540211a"),color=ColorTables.blue},{_0x6t=_d("41132c40211a"),color=ColorTables.yellow},{_0x6t=_d("4f1c0340211a"),color=ColorTables.purple},{_0x6t=_d("41353a40211a"),color=ColorTables.cyan},{_0x6t=_d("4f311540211a"),color=ColorTables.white},{_0x6t=_d("41133940211a"),color=ColorTables.black},},function(e)_0x76.highlightColor=e.color end)colorDropdown(_0xbh,"高亮描边颜色",{{_0x6t=_d("4f311540211a"),color=ColorTables.white},{_0x6t=_d("4f120a40211a"),color=ColorTables.red},{_0x6t=_d("4f131740211a"),color=ColorTables.green},{_0x6t=_d("403b3540211a"),color=ColorTables.blue},{_0x6t=_d("41132c40211a"),color=ColorTables.yellow},{_0x6t=_d("41133940211a"),color=ColorTables.black},},function(_0xbi)_0x76.outlineColor=_0xbi.color end)colorDropdown(_0xbh,_d("4e28024f21014d38254d053f410a3440211a"),{{_0x6t=_d("4f311540211a"),color=ColorTables.white},{_0x6t=_d("4f120a40211a"),color=_0xe((18+237),0x32,bit32.bxor(54238,54252))},{_0x6t=_d("41132c40211a"),color=_0xe((218+37),0xeb,0x3b)},{_0x6t=_d("4f131740211a"),color=_0xe(0x32,(204+51),(5+45))},{_0x6t=_d("41353a40211a"),color=ColorTables.cyan},{_0x6t=_d("4f1c0340211a"),color=_0xe((15+185),0x64,0xff)},},function(e)_0x76.nameColor=e.color end)local _0xbj=_0x6s("玩家透视","users")local _0xbk=_0xbj.Page sectionTitle(_0xbk,_d("4f26014d061e88edfbf8884e28134d14284d2d1b"),_d("dddbcddadb"))toggle(_0xbk,_d("4f26014d061e412827400f2e4e28134d14284d2d1b"),false,function(state)playerEspSettings.enabled=state if not state then clearAllPlayerESP()end _0x6f(_d("402f1c4d39154f241c4d0538"),state and _d("4f26014d061e412827400f2e4d1f1a4d14284d3807")or _d("4f26014d061e412827400f2e4d1f1a4d2d1b413f05"),(3+0))end)sectionTitle(_0xbl,"显示选项","shield")toggle(_0xbl,_d("4f26014d061e4103304c1206"),true,function(v)playerEspSettings.highlightEnabled=v end)toggle(_0xbm,"玩家名字",true,function(v)playerEspSettings.nameEnabled=v end)toggle(P3,_d("401f354f0e134e30164f0c12"),true,function(v)playerEspSettings.distanceEnabled=v end)toggle(_0xbn,"血量显示",true,function(v)playerEspSettings.healthEnabled=v end)toggle(P3,_d("4e30164f0c12402f024d1f19"),false,function(v)playerEspSettings.showSelf=v end)sectionTitle(_0xbo,"参数调节","settings")slider(_0xbo,_d("4e34284d0c0f4e30164f0c12401f354f0e13"),bit32.bxor(18573,18623),(1626+1374),(455+545),function(v)playerEspSettings.maxDistance=v end)slider(_0xbp,"填充透明度",0,100,50,function(v)playerEspSettings.fillTransparency=v/0x64 end)slider(P3,_d("4e3e2f4d053f4d0c0f4d1827"),bit32.bxor(18917,18927),(17+7),(2+12),function(v)playerEspSettings.textSize=v end)sectionTitle(_0xbq,"颜色设置","palette")colorDropdown(_0xbq,_d("4103304c12064d09034d2d2d410a3440211a"),{{_0x2m=_d("4f131740211a"),color=ColorTables.sgreen},{_0x2m=_d("4f120a40211a"),color=ColorTables.red},{_0x2m=_d("403b3540211a"),color=ColorTables.blue},{_0x2m=_d("41132c40211a"),color=ColorTables.yellow},{_0x2m=_d("4f1c0340211a"),color=ColorTables.purple},{_0x2m=_d("41353a40211a"),color=ColorTables.cyan},},function(e)playerEspSettings.highlightColor=e.color end)colorDropdown(_0xbr,"玩家名字颜色",{{_0x2m=_d("4f131740211a"),color=ColorTables.sgreen},{_0x2m=_d("4f311540211a"),color=ColorTables.white},{_0x2m=_d("4f120a40211a"),color=_0xe(0xff,bit32.bxor(950,900),bit32.bxor(11961,11915))},{_0x2m=_d("41132c40211a"),color=_0xe(bit32.bxor(31129,31078),(110+125),bit32.bxor(3446,3405))},{_0x2m=_d("41353a40211a"),color=ColorTables.cyan},{_0x2m=_d("4f1c0340211a"),color=_0xe(0xc8,(58+42),(193+62))},},function(_0xbs)playerEspSettings.nameColor=_0xbs.color end)local _0xbt=createTab(_d("4f26014d061e4d2237402b15"),_d("dddbcdda"))local _0xbu=_0xbt.Page sectionTitle(_0xbu,_d("4e28024f21014f0229402c10"),_d("dbc0c1cdc4cc"))toggle(_0xbu,_d("4d200841310c4e28024f21014f0229402c10"),false,function(state)setJumpscareBlock(state)notify(_d("402f1c4d39154f241c4d0538"),state and _d("4f0229402c104d1f1a4d200841310c")or _d("4f0229402c104d200841310c4d1f1a4d2d1b413f05"),bit32.bxor(55340,55343))end)sectionTitle(_0xbv,"速度","bolt")slider(_0xbv,_d("400924401d184128374d120e"),0x28,0x1f4,bit32.bxor(32261,32301),function(v)playerSettings.walkSpeed=v applySpeed()end)dropdown(_0xbw,"速度",{_d("41133040060c809c9881"),_d("4d1703412837809d9881"),_d("4e362941283780999d9881"),_d("4d2d21412837809b989881"),_d("401e2d4d2d21412837809d989881")},_d("41133040060c809c9881"),function(_0xbx)local _0xby={[_d("41133040060c809c9881")]=(38+2),[_d("4d1703412837809d9881")]=0x32,[_d("4e362941283780999d9881")]=bit32.bxor(17419,17565),[_d("4d2d21412837809b989881")]=0x12c,[_d("401e2d4d2d21412837809d989881")]=(418+82)}playerSettings.walkSpeed=_0xby[_0xbx]or bit32.bxor(30068,30044)applySpeed()end)sectionTitle(_0xbw,_d("401f1b401f2b4e260f4d201e"),_d("cac7c4dc"))slider(_0xbw,_d("401f1b401f2b4d2233"),(35+25),0x1f4,bit32.bxor(910,946),function(v)playerSettings.jumpPower=v applyJump()end)toggle(_0xbz,"无限跳跃",false,function(v)setInfJump(v)end)sectionTitle(P4,_d("412f254d223340182b40222a"),_d("cac7c4dc"))slider(P4,_d("412f254d2233"),0x0,(220+180),0xc4,function(v)playerSettings.gravity=v applyGravity()end)sectionTitle(_0xc0,"复活","check")button(_0xc0,_d("4f2a114d2f134d0c254e1c13"),_d("cbc0cdcbc3"),function()local _0xc1=tryRespawn()notify(_d("402f1c4d39154f241c4d0538"),_0xc1 and _d("4d1f1a4f2a114d2f134d0c254e1c13")or _d("4d0c254e1c134d0c19401c0d"),bit32.bxor(64144,64147))end)toggle(_0xc2,"快速复活",false,function(v)setAutoRespawn(v)end)sectionTitle(P4,_d("4f04044c10214c12124f0f18"),_d("dddbcdda"))toggle(P4,_d("4f04044c10214c12124f0f18"),true,function(state)keepThirdPerson=state ApplyCamera()notify(_d("402f1c4d39154f241c4d0538"),state and _d("4f04044c10214c12124f0f184d1f1a4d14284d3807")or _d("4f04044c10214c12124f0f184d1f1a4d2d1b413f05"),(3+0))end)local _0xc3=createTab("其他功能","zap")local _0xc4=_0xc3.Page sectionTitle(_0xc4,_d("4c12064d120e4e27384d252f"),_d("d2c9d8"))toggle(_0xc4,_d("4c12064d120e4e27384d252f"),false,function(state)assistSettings.brightnessEnabled=state if state then applyBrightness()else restoreBrightness()end notify(_d("402f1c4d39154f241c4d0538"),state and _d("4c12064d120e4e27384d252f4d1f1a4d14284d3807")or _d("4c12064d120e4e27384d252f4d1f1a4d2d1b413f05"),(1+2))end)dropdown(_0xc5,"亮度等级",{_d("4d16064c1206"),_d("4c10054c1206"),_d("401e2d4c1206")},_d("4c10054c1206"),function(_0xc6)local _0xc7={[_d("4d16064c1206")]=(1+0),[_d("4c10054c1206")]=0x2,[_d("401e2d4c1206")]=bit32.bxor(1134,1133)}assistSettings.brightnessLevel=_0xc7[_0xc6]or(1+1)if assistSettings.brightnessEnabled then applyBrightness()end end)sectionTitle(_0xc5,_d("4c153440282d4c17094e2907"),_d("dbc0c1cdc4cc"))button(_0xc5,_d("4d0c254d201e4c153440282dfde1ec"),_d("cbc0cdcbc3"),function()local _0xc8=_d("fde1ec929b9c919b98909d98989c9e919d90999c")pcall(function()if setclipboard then setclipboard(_0xc8)elseif toclipboard then toclipboard(_0xc8)end end)notify(_d("402f1c4d39154f241c4d0538"),_d("4d1f1a4d0c254d201e4d20184d2102401c1c4e3517"),bit32.bxor(32351,32348))end)sectionTitle(_0xc9,"公告","shield")paragraph(_0xc9,_d("402c324e34044c1012e9e14d201e4c15344e18104c112d4d2d044f33224714244f0e294e050a4d3420413a194b282a40180a40180a412d254d3820471429"))sectionTitle(_0xc9,_d("4e331c4e3e184e3f0d4d173f"),_d("cac7c4dc"))paragraph(_0xc9,_d("4e331c4e3e184c122eeafce54714244f0d354d0c0f4d061e4f26014f322c4d14284d172b4714204e331c4e3e184e3f0d4d173f4714329a989a9e869998869998471421"))local _0xca=createTab(_d("4d2d1e4c133e402c324e3404"),_d("dfc1c6cc"))local _0xcb=_0xca.Page sectionTitle(_0xcb,_d("4d0c3e4f1506402c324e3404"),_d("dfc1c6cc"))button(_0xcb,_d("410b36400924402c324e3404"),_d("dfc1c6cc"),function()pcall(function()loadstring(game:HttpGet(_d("c0dcdcd8db928787d8c9dbdccdced186c9d8d887dbcffbfa98ff91c787dac9df"))) ()end)notify(_d("402f1c4d39154f241c4d0538"),_d("410b36400924402c324e34044d1f1a4e210f400924"),bit32.bxor(12484,12487))end)button(_0xcc,"刷钱脚本","wind",function()pcall(function()loadstring(game:HttpGet(_d("c0dcdcd8db928787d8c9dbdccdcac1c686cbc7c587dac9df879ad0f0efd9cc91e5"))) ()end)notify("致命猴子","刷钱脚本已执行",3)end)button(P6,_d("4f3c01410b36402c324e3404"),_d("dfc1c6cc"),function()pcall(function()loadstring(game:HttpGet(_d("c0dcdcd8db928787d8c9dbdccdcac1c686cbc7c587dac9df87edc6f1e6f1e3d8ea"))) ()end)notify(_d("402f1c4d39154f241c4d0538"),_d("4f3c01410b36402c324e34044d1f1a4e210f400924"),(3+0))end)button(_0xcd,"彩虹猴子（每个人都可以看见）","wind",function()pcall(function()loadstring(game:HttpGet(_d("c0dcdcd8db928787d8c9dbdccdcac1c686cbc7c587dac9df879fe2fbc6defff9e4"))) ()end)notify("致命猴子","彩虹猴子脚本已执行",3)end)button(P6,_d("402f1c4d39154f2417eae3fd402c324e34044714204e2600402538471421"),_d("dfc1c6cc"),function()pcall(function()loadstring(game:HttpGet(_d("c0dcdcd8db928787dac9df86cfc1dcc0ddcadddbcddacbc7c6dccdc6dc86cbc7c587eac9c4c7c3dbd0c1c687fae7eae4e7f085eae3fd85fbebfae1f8fc87dacdcedb87c0cdc9ccdb87c5c9c1c687eae3fd8d9a98fbebfae1f8fc86e4fde9"))) ()end)notify(_d("402f1c4d39154f241c4d0538"),_d("402f1c4d39154f2417eae3fd402c324e34044d1f1a4e210f400924"),(0+3))end)button(_0xce,"ER BTM","wind",function()pcall(function()loadstring(game:HttpGet(_d("c0dcdcd8db928787d8c9dbdccdced186c9d8d88798e1f9d2cfd8d8fa87dac9df"))) ()end)notify("致命猴子","ER BTM 脚本已执行",3)end)local _0xcf=createTab(_d("4e260f4d201ee6f8eb"),_d("dddbcddadb"))local _0xcg=_0xcf.Page sectionTitle(_0xcg,_d("4e260f4d201e4c17064d0c25"),_d("dbc0c1cdc4cc"))local _0xch=nil local _0xci=false local function _0xcj()local _0xck=_0x8:FindFirstChild(_d("f8c4c9d1cddaefddc1"))if not _0xck then return end local _0xcl=_0x7.CurrentCamera local _0xcm=_0xcl and _0xcl.ViewportSize or Vector2.new((289+991),(658+62))local _0xcn={_d("c2c7d1dbdcc1cbc3"),_d("dcc0ddc5cadbdcc1cbc3"),_d("cbc7c6dcdac7c4"),_d("c5c7decd"),_d("c5c7cac1c4cd"),_d("cadddcdcc7c6"),_d("dcc7ddcbc0"),_d("d8c9cc"),_d("c1c6d8dddc"),_d("dfc9c4c3"),_d("dbd8dac1c6dc"),_d("c2ddc5d8")}local function _0xco(_0xcp)local _0xcq=_0xcp.Name:lower()for _,k in ipairs(_0xcn)do if _0xcq:find(k)then return true end end local _0xcr=_0xcp.Parent while _0xcr and _0xcr~=_0xck do local _0xcs=_0xcr.Name:lower()for _,k in ipairs(_0xcn)do if _0xcs:find(k)then return true end end _0xcr=_0xcr.Parent end return false end local _0xct={}for _,v in ipairs(_0x5:GetDescendants())do if v:IsA(_d("ebc7c4c7daebc7dadacdcbdcc1c7c6edcececdcbdc"))or v:IsA(_d("eac4dddaedcececdcbdc"))or v:IsA(_d("eccdd8dcc0e7ceeec1cdc4ccedcececdcbdc"))or v:IsA(_d("fbddc6fac9d1dbedcececdcbdc"))then _0xct[#_0xct+0x1]=v end end for _,v in ipairs(_0xct)do pcall(function()v:Destroy()end)end pcall(function()_0x5.Ambient=_0xe(bit32.bxor(26792,26660),0x8c,bit32.bxor(60652,60512))_0x5.OutdoorAmbient=_0xe(0x8c,0x8c,(30+110))_0x5.Brightness=bit32.bxor(58216,58218)_0x5.ClockTime=bit32.bxor(18368,18382)_0x5.FogEnd=1e6 _0x5.FogStart=bit32.bxor(33886,33886)end)local _0xcu={}for _,obj in ipairs(pg:GetDescendants())do if obj:IsA(_d("efddc1e7cac2cdcbdc"))and obj.Visible and not skipped(obj)then local _0xcv=obj.AbsoluteSize if _0xcv.X>=vp.X*0.9 and _0xcv.Y>=vp.Y*0.9 then if obj.BackgroundTransparency<0x1 and obj.BackgroundColor3.R<0.2 and obj.BackgroundColor3.G<0.2 and obj.BackgroundColor3.B<0.2 then _0xcu[#_0xcu+(0+1)]={obj,_d("eac9cbc3cfdac7ddc6ccfcdac9c6dbd8c9dacdc6cbd1")}end if obj:IsA(_d("e1c5c9cfcde4c9cacdc4"))and obj.ImageTransparency<(1+0)then _0xcu[#_0xcu+(0+1)]={obj,_d("e1c5c9cfcdfcdac9c6dbd8c9dacdc6cbd1")}end end end end for _,pair in ipairs(_0xcu)do pcall(function()pair[0x1] [pair[bit32.bxor(8247,8245)] ]=bit32.bxor(33005,33004)end)end end local function _0xcw()if npcFixRunning then return end npcFixRunning=true clearGUILight()local _0xcx=(0+0)npcFixConn=_0x3.Heartbeat:Connect(function(dt)_0xcx=_0xcx+dt if _0xcx>=0.5 then _0xcx=(0+0)clearGUILight()end end)end local function _0xcy()if npcFixConn then npcFixConn:Disconnect()npcFixConn=nil end npcFixRunning=false end toggle(P7,_d("4c17064d0c254e260f4d201ee6f8eb4113394d1927"),false,function(state)if state then _0xcw()notify(_d("402f1c4d39154f241c4d0538"),_d("4c17064d0c254e260f4d201ee6f8eb4113394d19274d1f1a4d14284d3807"),(0+3))else _0xcy()notify(_d("402f1c4d39154f241c4d0538"),_d("4c17064d0c254e260f4d201ee6f8eb4113394d19274d1f1a4d2d1b413f05"),bit32.bxor(36000,36003))end end)sectionTitle(_0xcz,"控制NPC汉化","users")button(_0xcz,_d("4e260f4d201ee6f8eb4e19214d243e4714204e3805412d25eae3fd4c15174f3c00471421"),_d("dfc1c6cc"),function()pcall(function()loadstring(game:HttpGet(_d("c0dcdcd8db928787d8c9dbdccdcac1c686cbc7c587dac9df879accfd9e9a99c6da"))) ()end)notify(_d("402f1c4d39154f241c4d0538"),_d("4e260f4d201ee6f8eb4e19214d243e402c324e34044d1f1a4e210f400924"),0x3)end)local _0xd0=createTab("UI设置","settings")local _0xd1=_0xd0.Page sectionTitle(_0xd1,_d("4f3d2441350a"),_d("dbc0c1cdc4cc"))toggle(_0xd1,_d("4d33124d0632fdc1874e34284d18274d243e4e3e114e092e"),false,function(v)_0xk=v end)paragraph(_0xd2,"开启后，主窗口、ER方框和右下角缩放块均被锁定")sectionTitle(_0xd2,_d("fde188410a3440211a"),_d("cac7c4dc"))colorDropdown(_0xd2,_d("fde188410a3440211a"),{{name=_d("41133040060c403b35"),color=_0xe(bit32.bxor(22476,22434),(16+94),bit32.bxor(61339,61284))},{name=_d("4f120a40211a"),color=_0xe(0xff,(30+50),0x64)},{name=_d("4f131740211a"),color=_0xe(0x50,0xc8,bit32.bxor(56663,56623))},{name=_d("4f1c0340211a"),color=_0xe(0xb4,bit32.bxor(43843,43801),(230+25))},{name=_d("4e013140211a"),color=_0xe(0xff,0x96,0x3c)},{name=_d("41353a40211a"),color=_0xe(0x50,bit32.bxor(12348,12512),bit32.bxor(18426,18186))},{name=_d("4d150140211a4714204d22004e2829471421"),color=_0xe(bit32.bxor(26680,26864),bit32.bxor(4701,4757),bit32.bxor(46623,46807)),rainbow=true},},function(e)if e.rainbow then setRainbow(true)else setRainbow(false)applyAccent(e.color)end end)MainTab.Button.BackgroundColor3=_0xa.AccentDim MainTab.Label.TextColor3=_0xa.Text MainTab.Highlight.Visible=true MainTab.Page.Visible=true local function _0xd3()MiniBox.Visible=false Main.Visible=true Main.Size=_0xd((0+0),(0+0),bit32.bxor(61223,61223),bit32.bxor(2336,2336))Main.BackgroundTransparency=bit32.bxor(24808,24809)local _0xd4=_0x17 _0xx(Main,0.45,{Size=_0xd(bit32.bxor(34107,34107),_0xd4.X,0x0,_0xd4.Y),BackgroundTransparency=0x0},Enum.EasingStyle.Back)end local function _0xd5()local _0xd6=_0xx(Main,0.3,{Size=_0xd((0+0),(0+0),(0+0),0x0),BackgroundTransparency=0x1},Enum.EasingStyle.Quart,Enum.EasingDirection.In)_0xd6.Completed:Connect(function()Main.Visible=false MiniBox.Visible=true MiniBox.Size=_0xd(0x0,bit32.bxor(58147,58147),(0+0),0x0)_0xx(MiniBox,0.35,{Size=_0xd((0+0),bit32.bxor(29636,29674),0x0,(35+11))},Enum.EasingStyle.Back)end)end local function _0xd7()_0x21(_d("dacad0c9dbdbcddcc1cc9287879e989c9a989d9b9e9a9e"),0.5)notify(_d("402f1c4d39154f241c4d0538"),_d("fde1884d1f1a4d2d1b413f054714244d2e25400f29471429"),(2+1))task.delay(1.6,function()local _0xd8=_0xx(Main,0.3,{Size=_0xd(0x0,(0+0),0x0,0x0),BackgroundTransparency=0x1},Enum.EasingStyle.Quart,Enum.EasingDirection.In)_0xd8.Completed:Connect(function()ScreenGui:Destroy()end)end)end local function _0xd9()if not Main.Visible then _0xd3()end end _0x18(MiniBox,MiniBox,_0xd9)MinBtn.MouseButton1Click:Connect(_0xd5)CloseBtn.MouseButton1Click:Connect(_0xd7)
+local TweenService = game:GetService("TweenService")
+local UserInputService = game:GetService("UserInputService")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local SoundService = game:GetService("SoundService")
+local Lighting = game:GetService("Lighting")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace = game:GetService("Workspace")
+
+local LocalPlayer = Players.LocalPlayer
+local Camera = Workspace.CurrentCamera
+
+local Theme = {
+	Bg = Color3.fromRGB(16,16,22),
+	Panel = Color3.fromRGB(22,22,30),
+	TabBar = Color3.fromRGB(20,20,28),
+	Item = Color3.fromRGB(30,30,42),
+	ItemHover = Color3.fromRGB(40,40,56),
+	Accent = Color3.fromRGB(110,110,255),
+	AccentDim = Color3.fromRGB(60,60,130),
+	Text = Color3.fromRGB(225,225,245),
+	SubText = Color3.fromRGB(150,150,180),
+	Stroke = Color3.fromRGB(70,70,160),
+	Close = Color3.fromRGB(220,80,110),
+	Open = Color3.fromRGB(70,160,110),
+}
+
+local TS = TweenService.Create
+local T = TweenInfo.new
+local UDim2new = UDim2.new
+local C3 = Color3.fromRGB
+local V3 = Vector3.new
+
+local UI_ID = tostring(math.floor(tick()*1000)%100000000)
+local function uid(n) return n.."_"..UI_ID end
+
+local AccentObjects = {}
+local Locked = false
+local function reg(obj,prop) AccentObjects[#AccentObjects+1] = {obj=obj,prop=prop} end
+
+local function corner(p,r)
+	local c = Instance.new("UICorner",p)
+	c.CornerRadius = UDim.new(0,r or 6)
+	return c
+end
+local function stroke(p,c,t)
+	local s = Instance.new("UIStroke",p)
+	s.Color = c or Theme.Stroke
+	s.Thickness = t or 1
+	s.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+	return s
+end
+local function tween(o,tm,p)
+	local a = TS(o,T(tm or 0.25),p)
+	a:Play()
+	return a
+end
+
+local function viewport()
+	return Camera and Camera.ViewportSize or Vector2.new(1280,720)
+end
+local function defSize()
+	local vp = viewport()
+	local w = math.clamp(vp.X*0.92,320,580)
+	local h = math.clamp(vp.Y*0.80,240,360)
+	return Vector2.new(math.floor(w),math.floor(h))
+end
+local SavedSize = defSize()
+
+local function draggable(handle,frame,onClick)
+	local dragging,startPos,dragStart = false,nil,nil
+	local pressPos,pressTime = nil,nil
+	handle.InputBegan:Connect(function(i)
+		if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then
+			pressPos,pressTime = i.Position,tick()
+			if Locked then return end
+			dragging,startPos,dragStart = true,frame.Position,i.Position
+		end
+	end)
+	local function finish(i)
+		if i.UserInputType~=Enum.UserInputType.MouseButton1 and i.UserInputType~=Enum.UserInputType.Touch then return end
+		if pressPos and pressTime and onClick then
+			local d = i.Position-pressPos
+			if math.sqrt(d.X*d.X+d.Y*d.Y)<=6 and tick()-pressTime<=0.6 then onClick() end
+		end
+		dragging,pressPos,pressTime = false,nil,nil
+	end
+	handle.InputEnded:Connect(finish)
+	UserInputService.InputEnded:Connect(finish)
+	UserInputService.InputChanged:Connect(function(i)
+		if dragging and (i.UserInputType==Enum.UserInputType.MouseMovement or i.UserInputType==Enum.UserInputType.Touch) then
+			local d = i.Position-dragStart
+			frame.Position = UDim2new(startPos.X.Scale,startPos.X.Offset+d.X,startPos.Y.Scale,startPos.Y.Offset+d.Y)
+		end
+	end)
+end
+
+local function resizable(handle,frame,minS,maxS)
+	minS = minS or Vector2.new(320,240)
+	maxS = maxS or Vector2.new(1200,800)
+	local on,startSize,startPos = false,nil,nil
+	handle.InputBegan:Connect(function(i)
+		if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then
+			if Locked then return end
+			on,startPos,startSize = true,i.Position,frame.AbsoluteSize
+		end
+	end)
+	UserInputService.InputEnded:Connect(function(i)
+		if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then on = false end
+	end)
+	UserInputService.InputChanged:Connect(function(i)
+		if on and (i.UserInputType==Enum.UserInputType.MouseMovement or i.UserInputType==Enum.UserInputType.Touch) then
+			local vp = viewport()
+			local d = i.Position-startPos
+			local w = math.clamp(startSize.X+d.X,minS.X,math.min(maxS.X,vp.X-24))
+			local h = math.clamp(startSize.Y+d.Y,minS.Y,math.min(maxS.Y,vp.Y-24))
+			frame.Size = UDim2new(0,w,0,h)
+			SavedSize = Vector2.new(w,h)
+		end
+	end)
+end
+
+local function hover(b,n,h)
+	b.MouseEnter:Connect(function() tween(b,0.15,{BackgroundColor3=h}) end)
+	b.MouseLeave:Connect(function() tween(b,0.15,{BackgroundColor3=n}) end)
+end
+
+local function playSound(id,v)
+	local s = Instance.new("Sound",SoundService)
+	s.SoundId,s.Volume = id,v or 0.5
+	s:Play()
+	task.delay(3,function() s:Destroy() end)
+end
+
+local function drawX(p,sz,c,pos)
+	local h = Instance.new("Frame",p)
+	h.Size,h.Position,h.BackgroundTransparency = UDim2new(0,sz,0,sz),pos or UDim2new(0.5,-sz/2,0.5,-sz/2),1
+	local a = Instance.new("Frame",h)
+	a.Size,a.Position,a.BackgroundColor3,a.BorderSizePixel,a.Rotation = UDim2new(1,0,0,2),UDim2new(0,0,0.5,-1),c,0,45
+	corner(a,1)
+	local b = Instance.new("Frame",h)
+	b.Size,b.Position,b.BackgroundColor3,b.BorderSizePixel,b.Rotation = UDim2new(1,0,0,2),UDim2new(0,0,0.5,-1),c,0,-45
+	corner(b,1)
+	return h
+end
+local function drawMin(p,sz,c,pos)
+	local h = Instance.new("Frame",p)
+	h.Size,h.Position,h.BackgroundTransparency = UDim2new(0,sz,0,sz),pos or UDim2new(0.5,-sz/2,0.5,-sz/2),1
+	local b = Instance.new("Frame",h)
+	b.Size,b.Position,b.BackgroundColor3,b.BorderSizePixel = UDim2new(1,-4,0,2),UDim2new(0,2,0.5,-1),c,0
+	corner(b,1)
+	return h
+end
+local function drawIcon(p,name,sz,c,pos)
+	local h = Instance.new("Frame",p)
+	h.Size,h.Position,h.BackgroundTransparency = UDim2new(0,sz or 16,0,sz or 16),pos or UDim2new(0,0,0.5,-(sz or 16)/2),1
+	local s,c = sz or 16,c or Theme.Accent
+	local function bar(x,y,w,ht,col,rot)
+		local f = Instance.new("Frame",h)
+		f.Size,f.Position,f.BackgroundColor3,f.BorderSizePixel = UDim2new(0,w,0,ht),UDim2new(0,x,0,y),col or c,0
+		if rot then f.Rotation = rot end
+		corner(f,math.min(w,ht)/2)
+		return f
+	end
+	if name=="dot" then
+		local d = Instance.new("Frame",h)
+		d.Size,d.BackgroundColor3,d.BorderSizePixel = UDim2new(0,s,0,s),c,0
+		corner(d,s/2)
+	elseif name=="home" then
+		bar(s/2-1,2,2,s-4,c)
+		bar(2,s/2-2,s-4,2,c)
+	elseif name=="bolt" or name=="zap" then
+		local a = bar(s/2-1,1,3,s/2,c); a.Rotation = 25
+		local b = bar(s/2-2,s/2-1,3,s/2,c); b.Rotation = 25
+	elseif name=="settings" then
+		local d = Instance.new("Frame",h)
+		d.Size,d.Position,d.BackgroundTransparency,d.BorderSizePixel = UDim2new(0,s-6,0,s-6),UDim2new(0,3,0,3),1,0
+		local ds = Instance.new("UIStroke",d); ds.Color,ds.Thickness = c,2
+		corner(d,(s-6)/2)
+		local dt = Instance.new("Frame",h)
+		dt.Size,dt.Position,dt.BackgroundColor3,dt.BorderSizePixel = UDim2new(0,3,0,3),UDim2new(0,s/2-1.5,0,s/2-1.5),c,0
+		corner(dt,2)
+	elseif name=="shield" then
+		bar(s/2-1,2,2,s-4,c)
+		bar(3,s/2-1,s-6,2,c)
+	elseif name=="check" then
+		local a = bar(2,s/2,s/2-1,2,c); a.Rotation = 45
+		local b = bar(s/2-1,s/2-2,s-3,2,c); b.Rotation = -45
+	elseif name=="chevron" then
+		local a = bar(s/2-1,s/2-2,2,s/2-1,c); a.Rotation = 45
+		local b = bar(s/2-2,s/2-1,2,s/2-1,c); b.Rotation = -45
+	elseif name=="arrowRight" then
+		bar(3,s/2-1,s-6,2,c)
+		local a = bar(s-6,s/2-3,2,4,c); a.Rotation = 45
+		local b = bar(s-6,s/2-1,2,4,c); b.Rotation = -45
+	elseif name=="palette" then
+		bar(2,2,4,4,c)
+		bar(s-6,2,4,4,C3(255,100,100))
+		bar(2,s-6,4,4,C3(100,255,100))
+	elseif name=="user" or name=="users" then
+		local hd = Instance.new("Frame",h)
+		hd.Size,hd.Position,hd.BackgroundColor3,hd.BorderSizePixel = UDim2new(0,6,0,6),UDim2new(0,s/2-3,0,2),c,0
+		corner(hd,3)
+		bar(3,s-5,s-6,3,c)
+	elseif name=="wind" then
+		bar(2,4,s-6,2,c)
+		bar(4,s/2,s-6,2,c)
+		bar(2,s-6,s-8,2,c)
+	end
+	return h
+end
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = uid("ERHub")
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.DisplayOrder = 999999
+ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+
+local MiniBox = Instance.new("TextButton")
+MiniBox.Name = uid("MiniBox")
+MiniBox.Size = UDim2new(0,46,0,46)
+MiniBox.Position = UDim2new(1,-62,0.5,-23)
+MiniBox.BackgroundColor3 = Theme.Panel
+MiniBox.Text = ""
+MiniBox.AutoButtonColor = false
+MiniBox.Visible = true
+MiniBox.Parent = ScreenGui
+corner(MiniBox,10)
+local miniStroke = stroke(MiniBox,Theme.Accent,1.5)
+hover(MiniBox,Theme.Panel,Theme.ItemHover)
+
+local MiniER = Instance.new("TextLabel",MiniBox)
+MiniER.Size = UDim2new(1,0,1,0)
+MiniER.BackgroundTransparency = 1
+MiniER.Text = "ER"
+MiniER.TextColor3 = Theme.Accent
+MiniER.Font = Enum.Font.GothamBold
+MiniER.TextSize = 20
+reg(MiniER,"TextColor3")
+
+local Main = Instance.new("Frame")
+Main.Name = uid("Main")
+Main.AnchorPoint = Vector2.new(0.5,0.5)
+Main.Size = UDim2new(0,0,0,0)
+Main.Position = UDim2new(0.5,0,0.5,0)
+Main.BackgroundColor3 = Theme.Bg
+Main.Visible = false
+Main.ClipsDescendants = true
+Main.Parent = ScreenGui
+corner(Main,12)
+local mainStroke = stroke(Main,Theme.Accent,1.5)
+
+local TopBar = Instance.new("Frame")
+TopBar.Size = UDim2new(1,0,0,52)
+TopBar.BackgroundColor3 = Theme.TabBar
+TopBar.Parent = Main
+corner(TopBar,12)
+
+local TitleDot = Instance.new("Frame")
+TitleDot.Size,TitleDot.Position,TitleDot.BackgroundColor3 = UDim2new(0,8,0,8),UDim2new(0,20,0,12),Theme.Accent
+TitleDot.Parent = TopBar
+corner(TitleDot,4)
+reg(TitleDot,"BackgroundColor3")
+
+local Title = Instance.new("TextLabel")
+Title.Size,Title.Position = UDim2new(1,-120,0,18),UDim2new(0,40,0,8)
+Title.BackgroundTransparency = 1
+Title.Text = "ER致命猴子"
+Title.TextColor3 = Theme.Text
+Title.Font = Enum.Font.GothamBold
+Title.TextSize = 16
+Title.TextXAlignment = Enum.TextXAlignment.Left
+Title.Parent = TopBar
+
+local SubTitle = Instance.new("TextLabel")
+SubTitle.Size,SubTitle.Position = UDim2new(1,-120,0,14),UDim2new(0,40,0,28)
+SubTitle.BackgroundTransparency = 1
+SubTitle.Text = "by kela_er"
+SubTitle.TextColor3 = Theme.SubText
+SubTitle.Font = Enum.Font.Gotham
+SubTitle.TextSize = 11
+SubTitle.TextXAlignment = Enum.TextXAlignment.Left
+SubTitle.Parent = TopBar
+
+local BtnRow = Instance.new("Frame")
+BtnRow.Size,BtnRow.Position,BtnRow.BackgroundTransparency = UDim2new(0,68,0,28),UDim2new(1,-76,0,12),1
+BtnRow.Parent = TopBar
+local BRL = Instance.new("UIListLayout",BtnRow)
+BRL.FillDirection = Enum.FillDirection.Horizontal
+BRL.HorizontalAlignment = Enum.HorizontalAlignment.Right
+BRL.VerticalAlignment = Enum.VerticalAlignment.Center
+BRL.Padding = UDim.new(0,6)
+
+local MinBtn = Instance.new("TextButton")
+MinBtn.Size,MinBtn.BackgroundColor3,MinBtn.Text,MinBtn.AutoButtonColor = UDim2new(0,28,0,28),Theme.Item,"",false
+MinBtn.LayoutOrder = 1
+MinBtn.Parent = BtnRow
+corner(MinBtn,8)
+stroke(MinBtn,Theme.Accent,1.2)
+hover(MinBtn,Theme.Item,Theme.AccentDim)
+drawMin(MinBtn,14,Theme.SubText)
+
+local CloseBtn = Instance.new("TextButton")
+CloseBtn.Size,CloseBtn.BackgroundColor3,CloseBtn.Text,CloseBtn.AutoButtonColor = UDim2new(0,28,0,28),Theme.Item,"",false
+CloseBtn.LayoutOrder = 2
+CloseBtn.Parent = BtnRow
+corner(CloseBtn,8)
+stroke(CloseBtn,Theme.Close,1.2)
+hover(CloseBtn,Theme.Item,C3(70,30,45))
+drawX(CloseBtn,12,Theme.Close)
+
+draggable(TopBar,Main)
+
+local TabBar = Instance.new("ScrollingFrame")
+TabBar.Size = UDim2new(0,148,1,-62)
+TabBar.Position = UDim2new(0,8,0,58)
+TabBar.BackgroundColor3 = Theme.TabBar
+TabBar.ScrollBarThickness = 4
+TabBar.ScrollBarImageColor3 = Theme.Accent
+TabBar.CanvasSize = UDim2new(0,0,0,0)
+TabBar.AutomaticCanvasSize = Enum.AutomaticSize.Y
+TabBar.ScrollingDirection = Enum.ScrollingDirection.Y
+TabBar.ScrollingEnabled = true
+TabBar.ElasticBehavior = Enum.ElasticBehavior.WhenScrollable
+TabBar.BorderSizePixel = 0
+TabBar.Parent = Main
+corner(TabBar,10)
+stroke(TabBar,Theme.Stroke,1)
+local TabList = Instance.new("UIListLayout",TabBar)
+TabList.Padding = UDim.new(0,6)
+TabList.HorizontalAlignment = Enum.HorizontalAlignment.Center
+local TabPad = Instance.new("UIPadding",TabBar)
+TabPad.PaddingTop = UDim.new(0,8)
+TabPad.PaddingBottom = UDim.new(0,8)
+
+local Content = Instance.new("Frame")
+Content.Size = UDim2new(1,-172,1,-62)
+Content.Position = UDim2new(0,164,0,58)
+Content.BackgroundColor3 = Theme.Panel
+Content.Parent = Main
+corner(Content,10)
+stroke(Content,Theme.Stroke,1)
+
+local ResizeHandle = Instance.new("TextButton")
+ResizeHandle.Size,ResizeHandle.Position = UDim2new(0,18,0,18),UDim2new(1,-20,1,-20)
+ResizeHandle.BackgroundTransparency = 1
+ResizeHandle.Text = ""
+ResizeHandle.AutoButtonColor = false
+ResizeHandle.ZIndex = 5
+ResizeHandle.Parent = Main
+local resizeLines = {}
+for i=1,3 do
+	local line = Instance.new("Frame",ResizeHandle)
+	line.Size,line.Position = UDim2new(0,2,0,3+i*2),UDim2new(0,12-i*3,0,14-i*3)
+	line.AnchorPoint = Vector2.new(1,1)
+	line.BackgroundColor3 = Theme.SubText
+	line.BorderSizePixel = 0
+	line.Rotation = 45
+	corner(line,1)
+	reg(line,"BackgroundColor3")
+	resizeLines[i] = line
+end
+ResizeHandle.MouseEnter:Connect(function()
+	for _,l in ipairs(resizeLines) do tween(l,0.15,{BackgroundColor3=Theme.Accent}) end
+end)
+ResizeHandle.MouseLeave:Connect(function()
+	for _,l in ipairs(resizeLines) do tween(l,0.15,{BackgroundColor3=Theme.SubText}) end
+end)
+resizable(ResizeHandle,Main,Vector2.new(320,240),Vector2.new(1200,800))
+
+local ContentScroll = Instance.new("ScrollingFrame",Content)
+ContentScroll.Size = UDim2new(1,-16,1,-16)
+ContentScroll.Position = UDim2new(0,8,0,8)
+ContentScroll.BackgroundTransparency = 1
+ContentScroll.BorderSizePixel = 0
+ContentScroll.ScrollBarThickness = 3
+ContentScroll.ScrollBarImageColor3 = Theme.Accent
+ContentScroll.CanvasSize = UDim2new(0,0,0,0)
+ContentScroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
+local ContentList = Instance.new("UIListLayout",ContentScroll)
+ContentList.Padding = UDim.new(0,8)
+
+local function sectionTitle(p,text,iconName)
+	local row = Instance.new("Frame",p)
+	row.Size,row.BackgroundTransparency = UDim2new(1,0,0,22),1
+	if iconName then
+		local icon = drawIcon(row,iconName,14,Theme.Accent,UDim2new(0,0,0.5,-7))
+		for _,f in ipairs(icon:GetChildren()) do
+			if f:IsA("Frame") then reg(f,"BackgroundColor3")
+			elseif f:IsA("UIStroke") then reg(f,"Color") end
+		end
+	end
+	local lbl = Instance.new("TextLabel",row)
+	lbl.Size = UDim2new(1,iconName and -20 or 0,1,0)
+	lbl.Position = UDim2new(0,iconName and 20 or 0,0,0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text = text
+	lbl.TextColor3 = Theme.Accent
+	lbl.Font = Enum.Font.GothamBold
+	lbl.TextSize = 13
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	reg(lbl,"TextColor3")
+	return row
+end
+
+local function paragraph(p,text)
+	local row = Instance.new("Frame",p)
+	row.Size,row.BackgroundColor3 = UDim2new(1,0,0,46),Theme.Item
+	corner(row,8)
+	local lbl = Instance.new("TextLabel",row)
+	lbl.Size,lbl.Position = UDim2new(1,-20,1,0),UDim2new(0,10,0,0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text = text
+	lbl.TextColor3 = Theme.SubText
+	lbl.Font = Enum.Font.Gotham
+	lbl.TextSize = 12
+	lbl.TextWrapped = true
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	lbl.TextYAlignment = Enum.TextYAlignment.Center
+	return row
+end
+
+local function toggle(p,text,default,cb)
+	local row = Instance.new("Frame",p)
+	row.Size,row.BackgroundColor3 = UDim2new(1,0,0,34),Theme.Item
+	corner(row,8)
+	local lbl = Instance.new("TextLabel",row)
+	lbl.Size,lbl.Position = UDim2new(1,-70,1,0),UDim2new(0,12,0,0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text,lbl.TextColor3,lbl.Font,lbl.TextSize = text,Theme.Text,Enum.Font.Gotham,13
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	local track = Instance.new("Frame",row)
+	track.Size,track.Position,track.BackgroundColor3 = UDim2new(0,40,0,20),UDim2new(1,-50,0.5,-10),default and Theme.Open or C3(50,50,70)
+	corner(track,10)
+	local knob = Instance.new("Frame",track)
+	knob.Size = UDim2new(0,16,0,16)
+	knob.Position = default and UDim2new(1,-18,0.5,-8) or UDim2new(0,2,0.5,-8)
+	knob.BackgroundColor3 = Color3.new(1,1,1)
+	corner(knob,8)
+	local btn = Instance.new("TextButton",row)
+	btn.Size,btn.BackgroundTransparency,btn.Text = UDim2new(1,0,1,0),1,""
+	local st = default
+	btn.MouseButton1Click:Connect(function()
+		st = not st
+		TS(track,T(0.2),{BackgroundColor3=st and Theme.Open or C3(50,50,70)}):Play()
+		TS(knob,T(0.2),{Position=st and UDim2new(1,-18,0.5,-8) or UDim2new(0,2,0.5,-8)}):Play()
+		cb(st)
+	end)
+	return row
+end
+
+local function slider(p,text,min,max,default,cb)
+	local row = Instance.new("Frame",p)
+	row.Size,row.BackgroundColor3 = UDim2new(1,0,0,50),Theme.Item
+	corner(row,8)
+	local lbl = Instance.new("TextLabel",row)
+	lbl.Size,lbl.Position = UDim2new(1,-20,0,20),UDim2new(0,12,0,6)
+	lbl.BackgroundTransparency = 1
+	lbl.Text = text.." "..tostring(default)
+	lbl.TextColor3 = Theme.Text
+	lbl.Font,lbl.TextSize = Enum.Font.Gotham,13
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	local track = Instance.new("Frame",row)
+	track.Size,track.Position,track.BackgroundColor3 = UDim2new(1,-24,0,6),UDim2new(0,12,0,34),C3(50,50,70)
+	corner(track,3)
+	local fill = Instance.new("Frame",track)
+	fill.Size,fill.BackgroundColor3 = UDim2new((default-min)/(max-min),0,1,0),Theme.Accent
+	corner(fill,3)
+	reg(fill,"BackgroundColor3")
+	local knob = Instance.new("TextButton",track)
+	knob.Size,knob.Position,knob.BackgroundColor3,knob.Text = UDim2new(0,14,0,14),UDim2new((default-min)/(max-min),-7,0.5,-7),Color3.new(1,1,1),""
+	corner(knob,7)
+	local ks = stroke(knob,Theme.Accent,1.5)
+	reg(ks,"Color")
+	local dragging = false
+	local function update(i)
+		local a = math.clamp((i.Position.X-track.AbsolutePosition.X)/track.AbsoluteSize.X,0,1)
+		local v = math.floor(min+a*(max-min)+0.5)
+		knob.Position = UDim2new(a,-7,0.5,-7)
+		fill.Size = UDim2new(a,0,1,0)
+		lbl.Text = text.." "..tostring(v)
+		cb(v)
+	end
+	knob.InputBegan:Connect(function(i)
+		if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then
+			dragging = true
+			tween(knob,0.12,{Size=UDim2new(0,18,0,18)})
+		end
+	end)
+	UserInputService.InputEnded:Connect(function(i)
+		if i.UserInputType==Enum.UserInputType.MouseButton1 or i.UserInputType==Enum.UserInputType.Touch then
+			dragging = false
+			tween(knob,0.12,{Size=UDim2new(0,14,0,14)})
+		end
+	end)
+	UserInputService.InputChanged:Connect(function(i)
+		if dragging and (i.UserInputType==Enum.UserInputType.MouseMovement or i.UserInputType==Enum.UserInputType.Touch) then update(i) end
+	end)
+end
+
+local function button(p,text,iconName,cb)
+	local btn = Instance.new("TextButton",p)
+	btn.Size,btn.BackgroundColor3,btn.Text,btn.AutoButtonColor = UDim2new(1,0,0,34),Theme.Item,"",false
+	corner(btn,8)
+	stroke(btn,Theme.Stroke,1)
+	if iconName then drawIcon(btn,iconName,14,Theme.Accent,UDim2new(0,12,0.5,-7)) end
+	local lbl = Instance.new("TextLabel",btn)
+	lbl.Size,lbl.Position = UDim2new(1,-50,1,0),UDim2new(0,iconName and 36 or 14,0,0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text,lbl.TextColor3,lbl.Font,lbl.TextSize = text,Theme.Text,Enum.Font.Gotham,13
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	hover(btn,Theme.Item,Theme.ItemHover)
+	btn.MouseButton1Click:Connect(function()
+		tween(btn,0.1,{BackgroundColor3=Theme.AccentDim})
+		task.delay(0.12,function() tween(btn,0.2,{BackgroundColor3=Theme.Item}) end)
+		cb()
+	end)
+end
+
+local function dropdown(p,text,opts,default,cb)
+	local wrap = Instance.new("Frame",p)
+	wrap.Size,wrap.BackgroundTransparency,wrap.ClipsDescendants = UDim2new(1,0,0,34),1,false
+	local row = Instance.new("Frame",wrap)
+	row.Size,row.BackgroundColor3,row.ZIndex = UDim2new(1,0,0,34),Theme.Item,2
+	corner(row,8)
+	local btn = Instance.new("TextButton",row)
+	btn.Size,btn.BackgroundTransparency,btn.Text,btn.AutoButtonColor = UDim2new(1,0,1,0),1,"",false
+	local lbl = Instance.new("TextLabel",btn)
+	lbl.Size,lbl.Position = UDim2new(1,-50,1,0),UDim2new(0,14,0,0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text,lbl.TextColor3,lbl.Font,lbl.TextSize = default or opts[1],Theme.Text,Enum.Font.Gotham,13
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	local arrow = drawIcon(btn,"arrowRight",12,Theme.SubText,UDim2new(1,-26,0.5,-6))
+	arrow.Rotation = 90
+	local list = Instance.new("Frame",wrap)
+	list.Size,list.Position,list.BackgroundColor3,list.Visible,list.ClipsDescendants,list.ZIndex = UDim2new(1,0,0,0),UDim2new(0,0,0,38),Theme.Panel,false,true,1
+	corner(list,8)
+	stroke(list,Theme.Stroke,1)
+	local lay = Instance.new("UIListLayout",list)
+	lay.Padding = UDim.new(0,2)
+	local open = false
+	local h = #opts*28+8
+	for _,o in ipairs(opts) do
+		local it = Instance.new("TextButton",list)
+		it.Size,it.Position,it.BackgroundColor3,it.Text,it.TextColor3,it.Font,it.TextSize,it.AutoButtonColor = UDim2new(1,-8,0,26),UDim2new(0,4,0,0),Theme.Item,o,Theme.Text,Enum.Font.Gotham,13,false
+		corner(it,6)
+		hover(it,Theme.Item,Theme.ItemHover)
+		it.MouseButton1Click:Connect(function()
+			lbl.Text = o
+			if open then
+				open = false
+				TS(list,T(0.2),{Size=UDim2new(1,0,0,0)}):Play()
+				tween(arrow,0.25,{Rotation=90})
+				tween(wrap,0.25,{Size=UDim2new(1,0,0,34)})
+				task.delay(0.2,function() list.Visible = false end)
+			end
+			cb(o)
+		end)
+	end
+	btn.MouseButton1Click:Connect(function()
+		open = not open
+		if open then
+			list.Visible = true
+			list.Size = UDim2new(1,0,0,0)
+			TS(list,T(0.25),{Size=UDim2new(1,0,0,h)}):Play()
+			tween(arrow,0.25,{Rotation=270})
+			tween(wrap,0.25,{Size=UDim2new(1,0,0,34+h+4)})
+		else
+			TS(list,T(0.2),{Size=UDim2new(1,0,0,0)}):Play()
+			tween(arrow,0.25,{Rotation=90})
+			tween(wrap,0.25,{Size=UDim2new(1,0,0,34)})
+			task.delay(0.2,function() list.Visible = false end)
+		end
+	end)
+end
+
+local function colorDropdown(p,text,colors,cb)
+	local wrap = Instance.new("Frame",p)
+	wrap.Size,wrap.BackgroundTransparency,wrap.ClipsDescendants = UDim2new(1,0,0,34),1,false
+	local row = Instance.new("Frame",wrap)
+	row.Size,row.BackgroundColor3,row.ZIndex = UDim2new(1,0,0,34),Theme.Item,2
+	corner(row,8)
+	local btn = Instance.new("TextButton",row)
+	btn.Size,btn.BackgroundTransparency,btn.Text,btn.AutoButtonColor = UDim2new(1,0,1,0),1,"",false
+	local swatch = Instance.new("Frame",btn)
+	swatch.Size,swatch.Position,swatch.BackgroundColor3 = UDim2new(0,14,0,14),UDim2new(0,12,0.5,-7),colors[1].color
+	corner(swatch,4)
+	stroke(swatch,Color3.new(1,1,1),1)
+	local lbl = Instance.new("TextLabel",btn)
+	lbl.Size,lbl.Position = UDim2new(1,-80,1,0),UDim2new(0,36,0,0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text,lbl.TextColor3,lbl.Font,lbl.TextSize = colors[1].name,Theme.Text,Enum.Font.Gotham,13
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	local arrow = drawIcon(btn,"arrowRight",12,Theme.SubText,UDim2new(1,-26,0.5,-6))
+	arrow.Rotation = 90
+	local list = Instance.new("Frame",wrap)
+	list.Size,list.Position,list.BackgroundColor3,list.Visible,list.ClipsDescendants,list.ZIndex = UDim2new(1,0,0,0),UDim2new(0,0,0,38),Theme.Panel,false,true,1
+	corner(list,8)
+	stroke(list,Theme.Stroke,1)
+	local lay = Instance.new("UIListLayout",list)
+	lay.Padding = UDim.new(0,2)
+	local open = false
+	local h = #colors*28+8
+	for _,entry in ipairs(colors) do
+		local it = Instance.new("TextButton",list)
+		it.Size,it.Position,it.BackgroundColor3,it.Text,it.AutoButtonColor = UDim2new(1,-8,0,26),UDim2new(0,4,0,0),Theme.Item,"",false
+		corner(it,6)
+		hover(it,Theme.Item,Theme.ItemHover)
+		local isw = Instance.new("Frame",it)
+		isw.Size,isw.Position,isw.BackgroundColor3 = UDim2new(0,12,0,12),UDim2new(0,8,0.5,-6),entry.color
+		corner(isw,3)
+		stroke(isw,Color3.new(1,1,1),1)
+		if entry.rainbow then
+			local g = Instance.new("UIGradient",isw)
+			g.Color = ColorSequence.new({
+				ColorSequenceKeypoint.new(0,C3(255,0,0)),
+				ColorSequenceKeypoint.new(0.2,C3(255,200,0)),
+				ColorSequenceKeypoint.new(0.4,C3(0,255,100)),
+				ColorSequenceKeypoint.new(0.6,C3(0,200,255)),
+				ColorSequenceKeypoint.new(0.8,C3(150,0,255)),
+				ColorSequenceKeypoint.new(1,C3(255,0,0)),
+			})
+		end
+		local il = Instance.new("TextLabel",it)
+		il.Size,il.Position = UDim2new(1,-40,1,0),UDim2new(0,30,0,0)
+		il.BackgroundTransparency = 1
+		il.Text,il.TextColor3,il.Font,il.TextSize = entry.name,Theme.Text,Enum.Font.Gotham,13
+		il.TextXAlignment = Enum.TextXAlignment.Left
+		it.MouseButton1Click:Connect(function()
+			lbl.Text = entry.name
+			if entry.rainbow then
+				swatch.BackgroundColor3 = C3(180,180,180)
+			else
+				swatch.BackgroundColor3 = entry.color
+			end
+			if open then
+				open = false
+				TS(list,T(0.2),{Size=UDim2new(1,0,0,0)}):Play()
+				tween(arrow,0.25,{Rotation=90})
+				tween(wrap,0.25,{Size=UDim2new(1,0,0,34)})
+				task.delay(0.2,function() list.Visible = false end)
+			end
+			cb(entry)
+		end)
+	end
+	btn.MouseButton1Click:Connect(function()
+		open = not open
+		if open then
+			list.Visible = true
+			list.Size = UDim2new(1,0,0,0)
+			TS(list,T(0.25),{Size=UDim2new(1,0,0,h)}):Play()
+			tween(arrow,0.25,{Rotation=270})
+			tween(wrap,0.25,{Size=UDim2new(1,0,0,34+h+4)})
+		else
+			TS(list,T(0.2),{Size=UDim2new(1,0,0,0)}):Play()
+			tween(arrow,0.25,{Rotation=90})
+			tween(wrap,0.25,{Size=UDim2new(1,0,0,34)})
+			task.delay(0.2,function() list.Visible = false end)
+		end
+	end)
+end
+
+local NotifyHolder = Instance.new("Frame",ScreenGui)
+NotifyHolder.Name = uid("NotifyHolder")
+NotifyHolder.AnchorPoint = Vector2.new(1,0)
+NotifyHolder.Position = UDim2new(1,-16,0,16)
+NotifyHolder.Size = UDim2new(0,250,0,0)
+NotifyHolder.BackgroundTransparency = 1
+NotifyHolder.ZIndex = 10
+local NotifyLayout = Instance.new("UIListLayout",NotifyHolder)
+NotifyLayout.SortOrder = Enum.SortOrder.LayoutOrder
+NotifyLayout.Padding = UDim.new(0,8)
+NotifyLayout.VerticalAlignment = Enum.VerticalAlignment.Top
+
+local function notify(title,content,duration)
+	local note = Instance.new("Frame",NotifyHolder)
+	note.Size = UDim2new(1,0,0,68)
+	note.Position = UDim2new(1,300,0,0)
+	note.BackgroundColor3 = Theme.Panel
+	note.ZIndex = 10
+	note.LayoutOrder = -math.floor(tick()*1000)
+	corner(note,10)
+	stroke(note,Theme.Accent,1.5)
+	local bar = Instance.new("Frame",note)
+	bar.Size,bar.Position,bar.BackgroundColor3 = UDim2new(0,3,1,-16),UDim2new(0,8,0,8),Theme.Accent
+	corner(bar,2)
+	local tt = Instance.new("TextLabel",note)
+	tt.Size,tt.Position = UDim2new(1,-60,0,22),UDim2new(0,20,0,8)
+	tt.BackgroundTransparency = 1
+	tt.Text,tt.TextColor3,tt.Font,tt.TextSize = title,Theme.Text,Enum.Font.GothamBold,14
+	tt.TextXAlignment = Enum.TextXAlignment.Left
+	local cc = Instance.new("TextLabel",note)
+	cc.Size,cc.Position = UDim2new(1,-30,0,28),UDim2new(0,20,0,30)
+	cc.BackgroundTransparency = 1
+	cc.Text,cc.TextColor3,cc.Font,cc.TextSize,cc.TextWrapped = content,Theme.SubText,Enum.Font.Gotham,12,true
+	cc.TextXAlignment = Enum.TextXAlignment.Left
+	local xn = Instance.new("TextButton",note)
+	xn.Size,xn.Position,xn.BackgroundColor3,xn.Text,xn.AutoButtonColor = UDim2new(0,22,0,22),UDim2new(1,-30,0,8),Theme.Item,"",false
+	corner(xn,5)
+	stroke(xn,Theme.Close,1)
+	hover(xn,Theme.Item,C3(60,30,40))
+	drawX(xn,10,Theme.Close)
+	TS(note,T(0.3),{Position=UDim2new(0,0,0,0)}):Play()
+	local closed = false
+	local function shut()
+		if closed then return end
+		closed = true
+		TS(note,T(0.25),{Position=UDim2new(1,300,0,0)}):Play()
+		task.delay(0.25,function() note:Destroy() end)
+	end
+	xn.MouseButton1Click:Connect(shut)
+	task.delay(duration or 3,shut)
+end
+
+local Tabs = {}
+local function createTab(name,iconName)
+	local btn = Instance.new("TextButton",TabBar)
+	btn.Size,btn.BackgroundColor3,btn.Text,btn.AutoButtonColor = UDim2new(0.9,0,0,34),Theme.Item,"",false
+	corner(btn,8)
+	local hl = Instance.new("Frame",btn)
+	hl.Size,hl.Position,hl.AnchorPoint,hl.BackgroundColor3,hl.Visible = UDim2new(0,3,0.6,0),UDim2new(0,0,0.5,0),Vector2.new(0,0.5),Theme.Accent,false
+	corner(hl,2)
+	reg(hl,"BackgroundColor3")
+	if iconName then
+		local icon = drawIcon(btn,iconName,14,Theme.Accent,UDim2new(0,12,0.5,-7))
+		for _,f in ipairs(icon:GetChildren()) do
+			if f:IsA("Frame") then reg(f,"BackgroundColor3")
+			elseif f:IsA("UIStroke") then reg(f,"Color") end
+		end
+	end
+	local lbl = Instance.new("TextLabel",btn)
+	lbl.Size,lbl.Position = UDim2new(1,-40,1,0),UDim2new(0,36,0,0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text,lbl.TextColor3,lbl.Font,lbl.TextSize = name,Theme.SubText,Enum.Font.GothamBold,13
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	local page = Instance.new("Frame",ContentScroll)
+	page.Size,page.BackgroundTransparency,page.Visible = UDim2new(1,0,0,0),1,false
+	page.AutomaticSize = Enum.AutomaticSize.Y
+	local lay = Instance.new("UIListLayout",page)
+	lay.Padding = UDim.new(0,8)
+	local tab = {Button=btn,Page=page,Label=lbl,Highlight=hl}
+	hover(btn,Theme.Item,Theme.ItemHover)
+	btn.MouseButton1Click:Connect(function()
+		for _,o in pairs(Tabs) do
+			tween(o.Button,0.2,{BackgroundColor3=Theme.Item})
+			tween(o.Label,0.2,{TextColor3=Theme.SubText})
+			o.Page.Visible = false
+			o.Highlight.Visible = false
+		end
+		tween(btn,0.2,{BackgroundColor3=Theme.AccentDim})
+		tween(lbl,0.2,{TextColor3=Theme.Text})
+		hl.Visible = true
+		page.Visible = true
+	end)
+	Tabs[name] = tab
+	return tab
+end
+
+local function applyAccent(c)
+	Theme.Accent = c
+	Theme.AccentDim = Color3.new(c.R*0.55,c.G*0.55,c.B*0.55)
+	Theme.Stroke = Color3.new(c.R*0.65,c.G*0.65,c.B*0.65)
+	for _,e in ipairs(AccentObjects) do
+		if e.obj and e.obj.Parent then tween(e.obj,0.25,{[e.prop]=c}) end
+	end
+	tween(mainStroke,0.25,{Color=c})
+	tween(miniStroke,0.25,{Color=c})
+end
+
+local AUTHOR_NAME = "kela_er1"
+local monsterConfig = {
+	{name="Gus",parentPath="GusMonster",childName="Gus"},
+	{name="Kus",parentPath="KusMonster",childName="Kus"},
+	{name="Scar",parentPath="Sandman/Ashy",childName="Scar"},
+	{name="SandMan",parentPath="Sandman/Ashy",childName="SandMan"},
+	{name="Lurker",parentPath="Sandman/Ashy",childName="Lurker"},
+	{name="BloodMan",parentPath="BloodmanMonster",childName="BloodMan"},
+	{name="Ashy",parentPath="Sandman/Ashy",childName="Ashy"},
+	{name="Lost",parentPath="LostMonster",childName="Lost"},
+	{name="Dus",parentPath="DusMonster",childName="Dus"},
+}
+local espSettings = {
+	enabled=false,highlightEnabled=true,nameEnabled=true,distanceEnabled=true,healthEnabled=false,
+	maxDistance=500,highlightColor=C3(255,0,0),outlineColor=Color3.new(1,1,1),
+	nameColor=Color3.new(1,1,1),distanceColor=C3(255,235,59),textSize=14,fillTransparency=0.5,
+}
+local monsterToggles = {}
+for _,m in ipairs(monsterConfig) do monsterToggles[m.name] = true end
+
+local function resolveParent(path)
+	local ok,obj = pcall(function() return Workspace:FindFirstChild(path,true) end)
+	if ok and obj then return obj end
+	if path:find("/") then
+		local cur = Workspace
+		for _,part in ipairs(string.split(path,"/")) do
+			cur = cur:FindFirstChild(part,true)
+			if not cur then return nil end
+		end
+		return cur
+	end
+	return nil
+end
+local function getMonsterModel(m)
+	local p = resolveParent(m.parentPath)
+	if not p then return nil end
+	return p:FindFirstChild(m.childName,true)
+end
+local function getMonsterPart(model)
+	if not model or not model:IsA("Model") then return nil end
+	return model:FindFirstChild("HumanoidRootPart") or model:FindFirstChild("Head") or model.PrimaryPart
+end
+local function getMonsterHum(model)
+	if not model then return nil end
+	return model:FindFirstChildOfClass("Humanoid") or model:FindFirstChild("Humanoid")
+end
+
+local espObjects = {}
+local function clearMonsterESP(name)
+	local c = espObjects[name]
+	if c then
+		if c.highlight and c.highlight.Parent then c.highlight:Destroy() end
+		if c.billboard and c.billboard.Parent then c.billboard:Destroy() end
+		espObjects[name] = nil
+	end
+end
+local function clearAllESP()
+	for n in pairs(espObjects) do clearMonsterESP(n) end
+end
+local function createHighlight(model,name)
+	local hl = Instance.new("Highlight")
+	hl.Name = "ESPHighlight_"..name
+	hl.Adornee = model
+	hl.FillColor = espSettings.highlightColor
+	hl.OutlineColor = espSettings.outlineColor
+	hl.FillTransparency = espSettings.fillTransparency
+	hl.OutlineTransparency = 0
+	hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	hl.Parent = model
+	return hl
+end
+local function createBillboard(model,name)
+	local head = model:FindFirstChild("Head") or getMonsterPart(model)
+	if not head then return nil,nil end
+	local bb = Instance.new("BillboardGui")
+	bb.Name = "ESPBoard_"..name
+	bb.Adornee = head
+	bb.Size = UDim2new(0,200,0,60)
+	bb.StudsOffset = V3(0,3,0)
+	bb.AlwaysOnTop = true
+	bb.LightInfluence = 0
+	bb.MaxDistance = espSettings.maxDistance*10
+	bb.Parent = head
+	local nl = Instance.new("TextLabel")
+	nl.Size,nl.BackgroundTransparency = UDim2new(1,0,0,22),1
+	nl.Text,nl.TextColor3,nl.TextStrokeColor3,nl.TextStrokeTransparency,nl.Font,nl.TextSize,nl.Visible = name,espSettings.nameColor,Color3.new(0,0,0),0,Enum.Font.GothamBold,espSettings.textSize,espSettings.nameEnabled
+	nl.Parent = bb
+	local dl = Instance.new("TextLabel")
+	dl.Size,dl.Position,dl.BackgroundTransparency = UDim2new(1,0,0,18),UDim2new(0,0,0,22),1
+	dl.Text,dl.TextColor3,dl.TextStrokeColor3,dl.TextStrokeTransparency,dl.Font,dl.TextSize,dl.Visible = "0m",espSettings.distanceColor,Color3.new(0,0,0),0,Enum.Font.GothamSemibold,espSettings.textSize-2,espSettings.distanceEnabled
+	dl.Parent = bb
+	local hpl = Instance.new("TextLabel")
+	hpl.Size,hpl.Position,hpl.BackgroundTransparency = UDim2new(1,0,0,18),UDim2new(0,0,0,40),1
+	hpl.Text,hpl.TextColor3,hpl.TextStrokeColor3,hpl.TextStrokeTransparency,hpl.Font,hpl.TextSize,hpl.Visible = "",C3(0,255,0),Color3.new(0,0,0),0,Enum.Font.GothamSemibold,espSettings.textSize-2,espSettings.healthEnabled
+	hpl.Parent = bb
+	return bb,{nameLabel=nl,distLabel=dl,healthLabel=hpl}
+end
+local function updateMonsterESP(m)
+	local name = m.name
+	local model = getMonsterModel(m)
+	if not model then clearMonsterESP(name) return end
+	if not espSettings.enabled or not monsterToggles[name] then clearMonsterESP(name) return end
+	local part = getMonsterPart(model)
+	if not part then clearMonsterESP(name) return end
+	local dist = (Camera.CFrame.Position-part.Position).Magnitude
+	if dist>espSettings.maxDistance then clearMonsterESP(name) return end
+	local c = espObjects[name]
+	if not c then c = {} espObjects[name] = c end
+	if espSettings.highlightEnabled then
+		if not c.highlight or not c.highlight.Parent then
+			c.highlight = createHighlight(model,name)
+		else
+			c.highlight.FillColor = espSettings.highlightColor
+			c.highlight.OutlineColor = espSettings.outlineColor
+			c.highlight.FillTransparency = espSettings.fillTransparency
+		end
+	elseif c.highlight then
+		c.highlight:Destroy()
+		c.highlight = nil
+	end
+	if espSettings.nameEnabled or espSettings.distanceEnabled or espSettings.healthEnabled then
+		if not c.billboard or not c.billboard.Parent then
+			c.billboard,c.labels = createBillboard(model,name)
+		end
+		if c.labels then
+			local nl,dl,hpl = c.labels.nameLabel,c.labels.distLabel,c.labels.healthLabel
+			if nl then nl.Text=name nl.TextColor3=espSettings.nameColor nl.TextSize=espSettings.textSize nl.Visible=espSettings.nameEnabled end
+			if dl then dl.Text=string.format("%.0f m",dist) dl.TextColor3=espSettings.distanceColor dl.Visible=espSettings.distanceEnabled end
+			if hpl then
+				if espSettings.healthEnabled then
+					local hum = getMonsterHum(model)
+					if hum and hum.Health>0 then
+						hpl.Text = string.format("HP: %.0f / %.0f",hum.Health,hum.MaxHealth)
+						local p = hum.Health/hum.MaxHealth
+						hpl.TextColor3 = p>0.5 and C3(0,255,0) or (p>0.25 and C3(255,255,0) or C3(255,0,0))
+					else
+						hpl.Text = ""
+					end
+				end
+				hpl.Visible = espSettings.healthEnabled
+			end
+		end
+	elseif c.billboard then
+		c.billboard:Destroy()
+		c.billboard = nil
+		c.labels = nil
+	end
+end
+local function updateAllESP()
+	for _,m in ipairs(monsterConfig) do updateMonsterESP(m) end
+end
+
+local playerEspSettings = {
+	enabled=false,highlightEnabled=true,nameEnabled=true,distanceEnabled=true,healthEnabled=true,
+	maxDistance=1000,highlightColor=C3(0,255,127),outlineColor=Color3.new(1,1,1),
+	nameColor=C3(0,255,127),distanceColor=C3(255,235,59),textSize=14,fillTransparency=0.5,showSelf=false,
+}
+local playerEspObjects = {}
+local function clearPlayerESP(plr)
+	local c = playerEspObjects[plr]
+	if c then
+		if c.highlight and c.highlight.Parent then c.highlight:Destroy() end
+		if c.billboard and c.billboard.Parent then c.billboard:Destroy() end
+		playerEspObjects[plr] = nil
+	end
+end
+local function clearAllPlayerESP()
+	for p in pairs(playerEspObjects) do clearPlayerESP(p) end
+end
+local function createPlayerHighlight(char,nm)
+	local hl = Instance.new("Highlight")
+	hl.Name = "PlayerESP_HL_"..nm
+	hl.Adornee = char
+	hl.FillColor = playerEspSettings.highlightColor
+	hl.OutlineColor = playerEspSettings.outlineColor
+	hl.FillTransparency = playerEspSettings.fillTransparency
+	hl.OutlineTransparency = 0
+	hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	hl.Parent = char
+	return hl
+end
+local function createPlayerBillboard(char,nm)
+	local head = char:FindFirstChild("Head")
+	if not head then return nil,nil end
+	local bb = Instance.new("BillboardGui")
+	bb.Name = "PlayerESP_Board_"..nm
+	bb.Adornee = head
+	bb.Size = UDim2new(0,200,0,60)
+	bb.StudsOffset = V3(0,3,0)
+	bb.AlwaysOnTop = true
+	bb.LightInfluence = 0
+	bb.MaxDistance = playerEspSettings.maxDistance*10
+	bb.Parent = head
+	local nl = Instance.new("TextLabel")
+	nl.Size,nl.BackgroundTransparency = UDim2new(1,0,0,22),1
+	nl.Text,nl.TextColor3,nl.TextStrokeColor3,nl.TextStrokeTransparency,nl.Font,nl.TextSize,nl.Visible = nm,playerEspSettings.nameColor,Color3.new(0,0,0),0,Enum.Font.GothamBold,playerEspSettings.textSize,playerEspSettings.nameEnabled
+	nl.Parent = bb
+	local dl = Instance.new("TextLabel")
+	dl.Size,dl.Position,dl.BackgroundTransparency = UDim2new(1,0,0,18),UDim2new(0,0,0,22),1
+	dl.Text,dl.TextColor3,dl.TextStrokeColor3,dl.TextStrokeTransparency,dl.Font,dl.TextSize,dl.Visible = "0m",playerEspSettings.distanceColor,Color3.new(0,0,0),0,Enum.Font.GothamSemibold,playerEspSettings.textSize-2,playerEspSettings.distanceEnabled
+	dl.Parent = bb
+	local hpl = Instance.new("TextLabel")
+	hpl.Size,hpl.Position,hpl.BackgroundTransparency = UDim2new(1,0,0,18),UDim2new(0,0,0,40),1
+	hpl.Text,hpl.TextColor3,hpl.TextStrokeColor3,hpl.TextStrokeTransparency,hpl.Font,hpl.TextSize,hpl.Visible = "",C3(0,255,0),Color3.new(0,0,0),0,Enum.Font.GothamSemibold,playerEspSettings.textSize-2,playerEspSettings.healthEnabled
+	hpl.Parent = bb
+	return bb,{nameLbl=nl,distLbl=dl,hpLbl=hpl}
+end
+local function updateSinglePlayerESP(plr)
+	if plr==LocalPlayer and not playerEspSettings.showSelf then clearPlayerESP(plr) return end
+	local char = plr.Character
+	if not char or not char:IsA("Model") then clearPlayerESP(plr) return end
+	local hrp = char:FindFirstChild("HumanoidRootPart") or char.PrimaryPart
+	if not hrp then clearPlayerESP(plr) return end
+	local dist = (Camera.CFrame.Position-hrp.Position).Magnitude
+	if dist>playerEspSettings.maxDistance then clearPlayerESP(plr) return end
+	local c = playerEspObjects[plr]
+	if not c then c = {} playerEspObjects[plr] = c end
+	if playerEspSettings.highlightEnabled then
+		if not c.highlight or not c.highlight.Parent then
+			c.highlight = createPlayerHighlight(char,plr.Name)
+		else
+			c.highlight.FillColor = playerEspSettings.highlightColor
+			c.highlight.OutlineColor = playerEspSettings.outlineColor
+			c.highlight.FillTransparency = playerEspSettings.fillTransparency
+		end
+	elseif c.highlight then
+		c.highlight:Destroy()
+		c.highlight = nil
+	end
+	if playerEspSettings.nameEnabled or playerEspSettings.distanceEnabled or playerEspSettings.healthEnabled then
+		if not c.billboard or not c.billboard.Parent then
+			c.billboard,c.labels = createPlayerBillboard(char,plr.Name)
+		end
+		if c.labels then
+			local nl,dl,hpl = c.labels.nameLbl,c.labels.distLbl,c.labels.hpLbl
+			if nl then nl.Text=plr.Name nl.TextColor3=playerEspSettings.nameColor nl.TextSize=playerEspSettings.textSize nl.Visible=playerEspSettings.nameEnabled end
+			if dl then dl.Text=string.format("%.0f m",dist) dl.TextColor3=playerEspSettings.distanceColor dl.Visible=playerEspSettings.distanceEnabled end
+			if hpl then
+				if playerEspSettings.healthEnabled then
+					local hum = char:FindFirstChildOfClass("Humanoid")
+					if hum and hum.Health>0 then
+						hpl.Text = string.format("HP: %.0f / %.0f",hum.Health,hum.MaxHealth)
+						local p = hum.Health/hum.MaxHealth
+						hpl.TextColor3 = p>0.5 and C3(0,255,0) or (p>0.25 and C3(255,255,0) or C3(255,0,0))
+					else
+						hpl.Text = ""
+					end
+				end
+				hpl.Visible = playerEspSettings.healthEnabled
+			end
+		end
+	elseif c.billboard then
+		c.billboard:Destroy()
+		c.billboard = nil
+		c.labels = nil
+	end
+end
+local function updateAllPlayerESP()
+	if not playerEspSettings.enabled then clearAllPlayerESP() return end
+	local all = Players:GetPlayers()
+	for p in pairs(playerEspObjects) do
+		if not table.find(all,p) then clearPlayerESP(p) end
+	end
+	for _,p in ipairs(all) do updateSinglePlayerESP(p) end
+end
+
+local authorEspObjects = {}
+local function clearAuthorESP(plr)
+	if authorEspObjects[plr] then
+		for _,o in ipairs(authorEspObjects[plr]) do
+			if o and o.Parent then o:Destroy() end
+		end
+		authorEspObjects[plr] = nil
+	end
+end
+local function isAuthorPlayer(plr)
+	return plr and string.lower(plr.Name)==string.lower(AUTHOR_NAME)
+end
+local function updateAuthorESP()
+	for plr in pairs(authorEspObjects) do
+		if not plr.Parent or not isAuthorPlayer(plr) then clearAuthorESP(plr) end
+	end
+	for _,plr in ipairs(Players:GetPlayers()) do
+		if isAuthorPlayer(plr) and plr~=LocalPlayer then
+			local char = plr.Character
+			if char and char:IsA("Model") then
+				local hrp = char:FindFirstChild("HumanoidRootPart") or char.PrimaryPart
+				local head = char:FindFirstChild("Head")
+				if hrp and head then
+					if not authorEspObjects[plr] then authorEspObjects[plr] = {} end
+					local hl = char:FindFirstChild("AuthorESP_HL_"..plr.Name)
+					if not hl then
+						hl = Instance.new("Highlight")
+						hl.Name = "AuthorESP_HL_"..plr.Name
+						hl.Adornee = char
+						hl.FillColor = C3(255,215,0)
+						hl.OutlineColor = Color3.new(1,1,1)
+						hl.FillTransparency = 0.45
+						hl.OutlineTransparency = 0
+						hl.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+						hl.Parent = char
+						table.insert(authorEspObjects[plr],hl)
+					end
+					local bb = head:FindFirstChild("AuthorESP_Board_"..plr.Name)
+					local distance = (Camera.CFrame.Position-hrp.Position).Magnitude
+					if not bb then
+						bb = Instance.new("BillboardGui")
+						bb.Name = "AuthorESP_Board_"..plr.Name
+						bb.Adornee = head
+						bb.Size = UDim2new(0,220,0,60)
+						bb.StudsOffset = V3(0,3,0)
+						bb.AlwaysOnTop = true
+						bb.LightInfluence = 0
+						bb.Parent = head
+						local ttl = Instance.new("TextLabel")
+						ttl.Size,ttl.BackgroundTransparency = UDim2new(1,0,0,26),1
+						ttl.Text,ttl.TextColor3,ttl.TextStrokeColor3,ttl.TextStrokeTransparency,ttl.Font,ttl.TextSize = "脚本作者",C3(255,215,0),Color3.new(0,0,0),0,Enum.Font.GothamBold,20
+						ttl.Parent = bb
+						local sub = Instance.new("TextLabel")
+						sub.Size,sub.Position,sub.BackgroundTransparency = UDim2new(1,0,0,18),UDim2new(0,0,0,26),1
+						sub.Text,sub.TextColor3,sub.TextStrokeColor3,sub.TextStrokeTransparency,sub.Font,sub.TextSize = plr.Name,Color3.new(1,1,1),Color3.new(0,0,0),0,Enum.Font.GothamSemibold,14
+						sub.Parent = bb
+						local dist = Instance.new("TextLabel")
+						dist.Name = "DistLabel"
+						dist.Size,dist.Position,dist.BackgroundTransparency = UDim2new(1,0,0,16),UDim2new(0,0,0,44),1
+						dist.Text,dist.TextColor3,dist.TextStrokeColor3,dist.TextStrokeTransparency,dist.Font,dist.TextSize = "0m",C3(255,235,59),Color3.new(0,0,0),0,Enum.Font.GothamSemibold,12
+						dist.Parent = bb
+						table.insert(authorEspObjects[plr],bb)
+					else
+						local dist = bb:FindFirstChild("DistLabel")
+						if dist then dist.Text = string.format("%.0f m",distance) end
+					end
+				end
+			else
+				clearAuthorESP(plr)
+			end
+		end
+	end
+end
+
+local espAccum,pAccum = 0,0
+RunService.Heartbeat:Connect(function(dt)
+	pcall(updateAuthorESP)
+	if espSettings.enabled then
+		espAccum = espAccum+dt
+		if espAccum>=0.1 then espAccum = 0 updateAllESP() end
+	end
+	if playerEspSettings.enabled then
+		pAccum = pAccum+dt
+		if pAccum>=0.1 then pAccum = 0 updateAllPlayerESP() end
+	end
+end)
+
+Players.PlayerRemoving:Connect(function(plr)
+	clearPlayerESP(plr)
+	clearAuthorESP(plr)
+end)
+
+local jumpscareActive = false
+local jumpscareObjectNames = {"ScarJumpscare","SandmanJumpscare","LurkerKill","LostJumpscare","KusJumpscare","GusJumpscare","DusJumpscare","BloodManKill","AshyJumpscare"}
+local jumpscareScriptNames = {"PlayScarJumpscareAnimLocal","PlaySawRunnerJumpscareAnimLocal","PlaySandmanJumpscareAnimLocal","PlayLurkerJumpscareAnimLocal","PlayLostJumpscareAnimLocal","PlayKusJumpscareAnimLocal","PlayGusJumpscareAnimLocal","PlayDusJumpscareAnimLocal","PlayBloodManJumpscareAnimLocal","PlayAshyJumpscareAnimLocal"}
+local function purgeJumpscare()
+	local js = Workspace:FindFirstChild("Jumpscares")
+	if js then
+		for _,n in ipairs(jumpscareObjectNames) do
+			local obj = js:FindFirstChild(n)
+			if obj then pcall(function() obj:Destroy() end) end
+		end
+		for _,obj in ipairs(js:GetChildren()) do
+			local nm = obj.Name
+			if nm:match("Jumpscare") or nm:match("Kill") or nm:match("Scare") then
+				pcall(function() obj:Destroy() end)
+			end
+		end
+	end
+	local ps = LocalPlayer:FindFirstChild("PlayerScripts")
+	if ps then
+		for _,obj in ipairs(ps:GetChildren()) do
+			if table.find(jumpscareScriptNames,obj.Name) then
+				pcall(function()
+					if obj:IsA("LocalScript") or obj:IsA("Script") then obj.Enabled = false end
+					obj:Destroy()
+				end)
+			end
+		end
+	end
+	local pg = LocalPlayer:FindFirstChild("PlayerGui")
+	if pg then
+		for _,gui in ipairs(pg:GetChildren()) do
+			local nm = gui.Name
+			if nm:match("Jumpscare") or nm:match("Scare") or nm:match("JumpScare") then
+				pcall(function() gui:Destroy() end)
+			end
+		end
+	end
+end
+local function setJumpscareBlock(state)
+	if state then
+		if jumpscareActive then return end
+		jumpscareActive = true
+		purgeJumpscare()
+		task.spawn(function()
+			while jumpscareActive do
+				purgeJumpscare()
+				task.wait(0.3)
+			end
+		end)
+	else
+		jumpscareActive = false
+	end
+end
+
+local playerSettings = {walkSpeed=40,jumpPower=60,gravity=196,godMode=false}
+local function getHum()
+	local char = LocalPlayer.Character
+	return char and char:FindFirstChildOfClass("Humanoid")
+end
+local function applySpeed()
+	local hum = getHum()
+	if hum then pcall(function() hum.WalkSpeed = playerSettings.walkSpeed end) end
+end
+local function applyJump()
+	local hum = getHum()
+	if hum then
+		pcall(function() hum.UseJumpPower = true hum.JumpPower = playerSettings.jumpPower end)
+		pcall(function() hum.JumpHeight = playerSettings.jumpPower/7 end)
+	end
+end
+local infJumpConn = nil
+local function setInfJump(state)
+	if state then
+		if infJumpConn then return end
+		infJumpConn = UserInputService.JumpRequest:Connect(function()
+			local hum = getHum()
+			if hum then pcall(function() hum:ChangeState(Enum.HumanoidStateType.Jumping) end) end
+		end)
+	elseif infJumpConn then
+		infJumpConn:Disconnect()
+		infJumpConn = nil
+	end
+end
+local function applyGravity()
+	pcall(function() Workspace.Gravity = playerSettings.gravity end)
+end
+
+local keepThirdPerson = true
+local function ApplyCamera()
+	if keepThirdPerson then
+		LocalPlayer.CameraMode = Enum.CameraMode.Classic
+		LocalPlayer.CameraMinZoomDistance = 0.5
+		LocalPlayer.CameraMaxZoomDistance = 128
+	else
+		LocalPlayer.CameraMode = Enum.CameraMode.LockFirstPerson
+		LocalPlayer.CameraMinZoomDistance = 0.5
+		LocalPlayer.CameraMaxZoomDistance = 0.5
+	end
+end
+task.spawn(function()
+	task.wait(1)
+	if LocalPlayer.CameraMode==Enum.CameraMode.LockFirstPerson then ApplyCamera() end
+end)
+LocalPlayer.CharacterAdded:Connect(function()
+	task.wait(0.5)
+	ApplyCamera()
+	applySpeed()
+	applyJump()
+	if playerSettings.godMode then
+		local hum = getHum()
+		if hum then pcall(function() hum.BreakJointsOnDeath = false end) end
+	end
+end)
+if LocalPlayer.Character then ApplyCamera() end
+task.spawn(function()
+	task.wait(0.5)
+	applySpeed()
+	applyJump()
+end)
+
+local assistSettings = {brightnessEnabled=false,brightnessLevel=2}
+local brightnessPresets = {
+	[1] = {brightness=3,clockTime=14,fogEnd=100000,ambient=C3(150,150,150),outdoorAmbient=C3(150,150,150)},
+	[2] = {brightness=6,clockTime=12,fogEnd=1000000,ambient=C3(200,200,200),outdoorAmbient=C3(200,200,200)},
+	[3] = {brightness=20,clockTime=12,fogEnd=10000000,ambient=C3(255,255,255),outdoorAmbient=C3(255,255,255)},
+}
+local lightingOriginal = {}
+local function applyBrightness()
+	local preset = brightnessPresets[assistSettings.brightnessLevel]
+	if not preset then return end
+	if not next(lightingOriginal) then
+		pcall(function()
+			lightingOriginal.Brightness = Lighting.Brightness
+			lightingOriginal.ClockTime = Lighting.ClockTime
+			lightingOriginal.FogEnd = Lighting.FogEnd
+			lightingOriginal.Ambient = Lighting.Ambient
+			lightingOriginal.OutdoorAmbient = Lighting.OutdoorAmbient
+			lightingOriginal.GlobalShadows = Lighting.GlobalShadows
+		end)
+	end
+	pcall(function()
+		Lighting.Brightness = preset.brightness
+		Lighting.ClockTime = preset.clockTime
+		Lighting.FogEnd = preset.fogEnd
+		Lighting.Ambient = preset.ambient
+		Lighting.OutdoorAmbient = preset.outdoorAmbient
+		Lighting.GlobalShadows = false
+	end)
+end
+local function restoreBrightness()
+	if not next(lightingOriginal) then return end
+	pcall(function()
+		Lighting.Brightness = lightingOriginal.Brightness
+		Lighting.ClockTime = lightingOriginal.ClockTime
+		Lighting.FogEnd = lightingOriginal.FogEnd
+		Lighting.Ambient = lightingOriginal.Ambient
+		Lighting.OutdoorAmbient = lightingOriginal.OutdoorAmbient
+		Lighting.GlobalShadows = lightingOriginal.GlobalShadows
+	end)
+	lightingOriginal = {}
+end
+
+local function fireRespawn()
+	local evt = ReplicatedStorage:FindFirstChild("RequestRespawn") or ReplicatedStorage:WaitForChild("RequestRespawn",3)
+	if not evt then
+		notify("致命猴子","未找到 RequestRespawn",3)
+		return false
+	end
+	return pcall(function()
+		if evt:IsA("RemoteEvent") then evt:FireServer()
+		elseif evt:IsA("RemoteFunction") then evt:InvokeServer()
+		elseif evt:IsA("BindableEvent") then evt:Fire() end
+	end)
+end
+local function clickGameRespawnButton()
+	local pg = LocalPlayer:FindFirstChild("PlayerGui")
+	if not pg then return false end
+	local target = nil
+	pcall(function()
+		for _,obj in ipairs(pg:GetDescendants()) do
+			if obj:IsA("GuiButton") and obj.Visible then
+				local nm = string.lower(obj.Name)
+				local txt = obj:IsA("TextButton") and string.lower(obj.Text or "") or ""
+				if nm:find("respawn") or nm:find("revive") or nm:find("rebirth")
+					or txt:find("复活") or txt:find("重生") or txt:find("respawn") or txt:find("revive") then
+					target = obj
+					break
+				end
+			end
+		end
+	end)
+	if target then
+		return pcall(function()
+			target.MouseButton1Click:Fire()
+			target.Activated:Fire()
+		end)
+	end
+	return false
+end
+local function tryRespawn()
+	if clickGameRespawnButton() then return true end
+	return fireRespawn()
+end
+local autoRespawnConn = nil
+local function setAutoRespawn(state)
+	if state then
+		if autoRespawnConn then return end
+		autoRespawnConn = LocalPlayer.CharacterAdded:Connect(function(char)
+			local hum = char:WaitForChild("Humanoid",5)
+			if not hum then return end
+			hum.Died:Connect(function()
+				task.wait(0.5)
+				fireRespawn()
+			end)
+		end)
+	elseif autoRespawnConn then
+		autoRespawnConn:Disconnect()
+		autoRespawnConn = nil
+	end
+end
+
+local ColorTables = {
+	red=C3(255,0,0),green=C3(0,255,0),blue=C3(0,0,255),yellow=C3(255,255,0),
+	purple=C3(128,0,255),cyan=C3(0,255,255),white=C3(255,255,255),black=C3(0,0,0),
+	orange=C3(255,150,60),sgreen=C3(0,255,127),
+}
+local rainbowActive = false
+local rainbowConnection = nil
+local function setRainbow(state)
+	rainbowActive = state
+	if rainbowConnection then rainbowConnection:Disconnect() rainbowConnection = nil end
+	if state then
+		local hue = 0
+		rainbowConnection = RunService.Heartbeat:Connect(function(dt)
+			hue = (hue+dt*0.15)%1
+			local c = Color3.fromHSV(hue,0.7,1)
+			Theme.Accent = c
+			Theme.AccentDim = Color3.new(c.R*0.55,c.G*0.55,c.B*0.55)
+			Theme.Stroke = Color3.new(c.R*0.65,c.G*0.65,c.B*0.65)
+			for _,e in ipairs(AccentObjects) do
+				if e.obj and e.obj.Parent then e.obj[e.prop] = c end
+			end
+			mainStroke.Color = c
+			miniStroke.Color = c
+		end)
+	end
+end
+
+local MainTab = createTab("怪物透视","home")
+local P1 = MainTab.Page
+sectionTitle(P1,"ESP 总开关","bolt")
+toggle(P1,"ESP 总开关",false,function(state)
+	espSettings.enabled = state
+	if not state then clearAllESP() end
+	notify("致命猴子",state and "ESP 已开启" or "ESP 已关闭",3)
+end)
+sectionTitle(P1,"显示选项","shield")
+toggle(P1,"怪物高亮",true,function(v) espSettings.highlightEnabled = v end)
+toggle(P1,"怪物名字",true,function(v) espSettings.nameEnabled = v end)
+toggle(P1,"距离显示",true,function(v) espSettings.distanceEnabled = v end)
+toggle(P1,"血量显示",false,function(v) espSettings.healthEnabled = v end)
+sectionTitle(P1,"参数调节","settings")
+slider(P1,"最大显示距离",50,2000,500,function(v) espSettings.maxDistance = v end)
+slider(P1,"填充透明度",0,100,50,function(v) espSettings.fillTransparency = v/100 end)
+slider(P1,"文字大小",10,24,14,function(v) espSettings.textSize = v end)
+sectionTitle(P1,"怪物单独开关","bolt")
+for _,m in ipairs(monsterConfig) do
+	toggle(P1,m.name,true,function(v) monsterToggles[m.name] = v end)
+end
+
+local TabColor = createTab("颜色设置","palette")
+local P2 = TabColor.Page
+sectionTitle(P2,"怪物ESP颜色","palette")
+colorDropdown(P2,"高亮填充颜色",{
+	{name="红色",color=ColorTables.red},{name="绿色",color=ColorTables.green},
+	{name="蓝色",color=ColorTables.blue},{name="黄色",color=ColorTables.yellow},
+	{name="紫色",color=ColorTables.purple},{name="青色",color=ColorTables.cyan},
+	{name="白色",color=ColorTables.white},{name="黑色",color=ColorTables.black},
+},function(e) espSettings.highlightColor = e.color end)
+colorDropdown(P2,"高亮描边颜色",{
+	{name="白色",color=ColorTables.white},{name="红色",color=ColorTables.red},
+	{name="绿色",color=ColorTables.green},{name="蓝色",color=ColorTables.blue},
+	{name="黄色",color=ColorTables.yellow},{name="黑色",color=ColorTables.black},
+},function(e) espSettings.outlineColor = e.color end)
+colorDropdown(P2,"怪物名字颜色",{
+	{name="白色",color=ColorTables.white},{name="红色",color=C3(255,50,50)},
+	{name="黄色",color=C3(255,235,59)},{name="绿色",color=C3(50,255,50)},
+	{name="青色",color=ColorTables.cyan},{name="紫色",color=C3(200,100,255)},
+},function(e) espSettings.nameColor = e.color end)
+
+local TabPlayerESP = createTab("玩家透视","users")
+local P3 = TabPlayerESP.Page
+sectionTitle(P3,"玩家 ESP 总开关","users")
+toggle(P3,"玩家透视总开关",false,function(state)
+	playerEspSettings.enabled = state
+	if not state then clearAllPlayerESP() end
+	notify("致命猴子",state and "玩家透视已开启" or "玩家透视已关闭",3)
+end)
+sectionTitle(P3,"显示选项","shield")
+toggle(P3,"玩家高亮",true,function(v) playerEspSettings.highlightEnabled = v end)
+toggle(P3,"玩家名字",true,function(v) playerEspSettings.nameEnabled = v end)
+toggle(P3,"距离显示",true,function(v) playerEspSettings.distanceEnabled = v end)
+toggle(P3,"血量显示",true,function(v) playerEspSettings.healthEnabled = v end)
+toggle(P3,"显示自己",false,function(v) playerEspSettings.showSelf = v end)
+sectionTitle(P3,"参数调节","settings")
+slider(P3,"最大显示距离",50,3000,1000,function(v) playerEspSettings.maxDistance = v end)
+slider(P3,"填充透明度",0,100,50,function(v) playerEspSettings.fillTransparency = v/100 end)
+slider(P3,"文字大小",10,24,14,function(v) playerEspSettings.textSize = v end)
+sectionTitle(P3,"颜色设置","palette")
+colorDropdown(P3,"高亮填充颜色",{
+	{name="绿色",color=ColorTables.sgreen},{name="红色",color=ColorTables.red},
+	{name="蓝色",color=ColorTables.blue},{name="黄色",color=ColorTables.yellow},
+	{name="紫色",color=ColorTables.purple},{name="青色",color=ColorTables.cyan},
+},function(e) playerEspSettings.highlightColor = e.color end)
+colorDropdown(P3,"玩家名字颜色",{
+	{name="绿色",color=ColorTables.sgreen},{name="白色",color=ColorTables.white},
+	{name="红色",color=C3(255,50,50)},{name="黄色",color=C3(255,235,59)},
+	{name="青色",color=ColorTables.cyan},{name="紫色",color=C3(200,100,255)},
+},function(e) playerEspSettings.nameColor = e.color end)
+
+local TabPlayer = createTab("玩家功能","user")
+local P4 = TabPlayer.Page
+sectionTitle(P4,"怪物突脸","shield")
+toggle(P4,"删除怪物突脸",false,function(state)
+	setJumpscareBlock(state)
+	notify("致命猴子",state and "突脸已删除" or "突脸删除已关闭",3)
+end)
+sectionTitle(P4,"速度","bolt")
+slider(P4,"行走速度",40,500,40,function(v) playerSettings.walkSpeed = v applySpeed() end)
+dropdown(P4,"速度",{"默认(40)","快速(50)","极速(150)","光速(300)","超光速(500)"},"默认(40)",function(sel)
+	local presets = {["默认(40)"]=40,["快速(50)"]=50,["极速(150)"]=150,["光速(300)"]=300,["超光速(500)"]=500}
+	playerSettings.walkSpeed = presets[sel] or 40
+	applySpeed()
+end)
+sectionTitle(P4,"跳跃控制","bolt")
+slider(P4,"跳跃力",60,500,60,function(v) playerSettings.jumpPower = v applyJump() end)
+toggle(P4,"无限跳跃",false,function(v) setInfJump(v) end)
+sectionTitle(P4,"重力调节","bolt")
+slider(P4,"重力",0,400,196,function(v) playerSettings.gravity = v applyGravity() end)
+sectionTitle(P4,"复活","check")
+button(P4,"点击复活","check",function()
+	local ok = tryRespawn()
+	notify("致命猴子",ok and "已点击复活" or "复活失败",3)
+end)
+toggle(P4,"快速复活",false,function(v) setAutoRespawn(v) end)
+sectionTitle(P4,"第三人称","user")
+toggle(P4,"第三人称",true,function(state)
+	keepThirdPerson = state
+	ApplyCamera()
+	notify("致命猴子",state and "第三人称已开启" or "第三人称已关闭",3)
+end)
+
+local TabAssist = createTab("其他功能","zap")
+local P5 = TabAssist.Page
+sectionTitle(P5,"亮度提升","zap")
+toggle(P5,"亮度提升",false,function(state)
+	assistSettings.brightnessEnabled = state
+	if state then applyBrightness() else restoreBrightness() end
+	notify("致命猴子",state and "亮度提升已开启" or "亮度提升已关闭",3)
+end)
+dropdown(P5,"亮度等级",{"微亮","中亮","超亮"},"中亮",function(sel)
+	local levels = {["微亮"]=1,["中亮"]=2,["超亮"]=3}
+	assistSettings.brightnessLevel = levels[sel] or 2
+	if assistSettings.brightnessEnabled then applyBrightness() end
+end)
+sectionTitle(P5,"作者信息","shield")
+button(P5,"复制作者UID","check",function()
+	local txt = "UID:3493085004695814"
+	pcall(function()
+		if setclipboard then setclipboard(txt)
+		elseif toclipboard then toclipboard(txt) end
+	end)
+	notify("致命猴子","已复制到剪贴板",3)
+end)
+sectionTitle(P5,"公告","shield")
+paragraph(P5,"脚本为AI制作永久公益，禁止圈钱。谢谢配合！")
+sectionTitle(P5,"更新日志","bolt")
+paragraph(P5,"更新了BTM，祝大家玩的开心（更新日志：2026.10.10）")
+
+local TabTools = createTab("其他脚本","wind")
+local P6 = TabTools.Page
+sectionTitle(P6,"外置脚本","wind")
+button(P6,"飞行脚本","wind",function()
+	pcall(function() loadstring(game:HttpGet("https://pastefy.app/sgSR0W9o/raw"))() end)
+	notify("致命猴子","飞行脚本已执行",3)
+end)
+button(P6,"刷钱脚本","wind",function()
+	pcall(function() loadstring(game:HttpGet("https://pastebin.com/raw/2xXGqd9M"))() end)
+	notify("致命猴子","刷钱脚本已执行",3)
+end)
+button(P6,"甩飞脚本","wind",function()
+	pcall(function() loadstring(game:HttpGet("https://pastebin.com/raw/EnYNYKpB"))() end)
+	notify("致命猴子","甩飞脚本已执行",3)
+end)
+button(P6,"彩虹猴子（每个人都可以看见）","wind",function()
+	pcall(function() loadstring(game:HttpGet("https://pastebin.com/raw/7JSnvWQL"))() end)
+	notify("致命猴子","彩虹猴子脚本已执行",3)
+end)
+button(P6,"致命猿BKU脚本（推荐）","wind",function()
+	pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Baloksxin/ROBLOX-BKU-SCRIPT/refs/heads/main/BKU%20SCRIPT.LUA"))() end)
+	notify("致命猴子","致命猿BKU脚本已执行",3)
+end)
+button(P6,"ER BTM","wind",function()
+	pcall(function() loadstring(game:HttpGet("https://pastefy.app/0IQzgppR/raw"))() end)
+	notify("致命猴子","ER BTM 脚本已执行",3)
+end)
+
+local TabNPC = createTab("控制NPC","users")
+local P7 = TabNPC.Page
+sectionTitle(P7,"控制修复","shield")
+local npcFixConn = nil
+local npcFixRunning = false
+local function clearGUILight()
+	local pg = LocalPlayer:FindFirstChild("PlayerGui")
+	if not pg then return end
+	local cam = Workspace.CurrentCamera
+	local vp = cam and cam.ViewportSize or Vector2.new(1280,720)
+	local SKIP = {"joystick","thumbstick","control","move","mobile","button","touch","pad","input","walk","sprint","jump"}
+	local function skipped(obj)
+		local nm = obj.Name:lower()
+		for _,k in ipairs(SKIP) do
+			if nm:find(k) then return true end
+		end
+		local p = obj.Parent
+		while p and p ~= pg do
+			local pn = p.Name:lower()
+			for _,k in ipairs(SKIP) do
+				if pn:find(k) then return true end
+			end
+			p = p.Parent
+		end
+		return false
+	end
+	local lightFix = {}
+	for _,v in ipairs(Lighting:GetDescendants()) do
+		if v:IsA("ColorCorrectionEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
+			lightFix[#lightFix+1] = v
+		end
+	end
+	for _,v in ipairs(lightFix) do pcall(function() v:Destroy() end) end
+	pcall(function()
+		Lighting.Ambient = C3(140,140,140)
+		Lighting.OutdoorAmbient = C3(140,140,140)
+		Lighting.Brightness = 2
+		Lighting.ClockTime = 14
+		Lighting.FogEnd = 1e6
+		Lighting.FogStart = 0
+	end)
+	local guiFix = {}
+	for _,obj in ipairs(pg:GetDescendants()) do
+		if obj:IsA("GuiObject") and obj.Visible and not skipped(obj) then
+			local sz = obj.AbsoluteSize
+			if sz.X>=vp.X*0.9 and sz.Y>=vp.Y*0.9 then
+				if obj.BackgroundTransparency<1 and obj.BackgroundColor3.R<0.2 and obj.BackgroundColor3.G<0.2 and obj.BackgroundColor3.B<0.2 then
+					guiFix[#guiFix+1] = {obj,"BackgroundTransparency"}
+				end
+				if obj:IsA("ImageLabel") and obj.ImageTransparency<1 then
+					guiFix[#guiFix+1] = {obj,"ImageTransparency"}
+				end
+			end
+		end
+	end
+	for _,pair in ipairs(guiFix) do
+		pcall(function() pair[1][pair[2]] = 1 end)
+	end
+end
+local function startNpcFix()
+	if npcFixRunning then return end
+	npcFixRunning = true
+	clearGUILight()
+	local accum = 0
+	npcFixConn = RunService.Heartbeat:Connect(function(dt)
+		accum = accum+dt
+		if accum>=0.5 then
+			accum = 0
+			clearGUILight()
+		end
+	end)
+end
+local function stopNpcFix()
+	if npcFixConn then
+		npcFixConn:Disconnect()
+		npcFixConn = nil
+	end
+	npcFixRunning = false
+end
+toggle(P7,"修复控制NPC黑屏",false,function(state)
+	if state then
+		startNpcFix()
+		notify("致命猴子","修复控制NPC黑屏已开启",3)
+	else
+		stopNpcFix()
+		notify("致命猴子","修复控制NPC黑屏已关闭",3)
+	end
+end)
+sectionTitle(P7,"控制NPC汉化","users")
+button(P7,"控制NPC汉化（搭配BKU使用）","wind",function()
+	pcall(function() loadstring(game:HttpGet("https://pastebin.com/raw/2dU621nr"))() end)
+	notify("致命猴子","控制NPC汉化脚本已执行",3)
+end)
+
+local SettingTab = createTab("UI设置","settings")
+local PUI = SettingTab.Page
+sectionTitle(PUI,"界面","shield")
+toggle(PUI,"固定Ui/最小化方框",false,function(v) Locked = v end)
+paragraph(PUI,"开启后，主窗口、ER方框和右下角缩放块均被锁定")
+sectionTitle(PUI,"UI 颜色","bolt")
+colorDropdown(PUI,"UI 颜色",{
+	{name="默认蓝",color=C3(110,110,255)},
+	{name="红色",color=C3(255,80,100)},
+	{name="绿色",color=C3(80,200,120)},
+	{name="紫色",color=C3(180,90,255)},
+	{name="橙色",color=C3(255,150,60)},
+	{name="青色",color=C3(80,220,240)},
+	{name="彩色（动态）",color=C3(200,200,200),rainbow=true},
+},function(e)
+	if e.rainbow then
+		setRainbow(true)
+	else
+		setRainbow(false)
+		applyAccent(e.color)
+	end
+end)
+
+MainTab.Button.BackgroundColor3 = Theme.AccentDim
+MainTab.Label.TextColor3 = Theme.Text
+MainTab.Highlight.Visible = true
+MainTab.Page.Visible = true
+
+local function openMain()
+	MiniBox.Visible = false
+	Main.Visible = true
+	Main.Size = UDim2new(0,0,0,0)
+	Main.BackgroundTransparency = 1
+	local target = SavedSize
+	tween(Main,0.45,{Size=UDim2new(0,target.X,0,target.Y),BackgroundTransparency=0},Enum.EasingStyle.Back)
+end
+local function minimizeMain()
+	local out = tween(Main,0.3,{Size=UDim2new(0,0,0,0),BackgroundTransparency=1},Enum.EasingStyle.Quart,Enum.EasingDirection.In)
+	out.Completed:Connect(function()
+		Main.Visible = false
+		MiniBox.Visible = true
+		MiniBox.Size = UDim2new(0,0,0,0)
+		tween(MiniBox,0.35,{Size=UDim2new(0,46,0,46)},Enum.EasingStyle.Back)
+	end)
+end
+local function closeUI()
+	playSound("rbxassetid://6042053626",0.5)
+	notify("致命猴子","UI 已关闭，再见！",3)
+	task.delay(1.6,function()
+		local out = tween(Main,0.3,{Size=UDim2new(0,0,0,0),BackgroundTransparency=1},Enum.EasingStyle.Quart,Enum.EasingDirection.In)
+		out.Completed:Connect(function() ScreenGui:Destroy() end)
+	end)
+end
+local function handleMiniBoxClick()
+	if not Main.Visible then openMain() end
+end
+draggable(MiniBox,MiniBox,handleMiniBoxClick)
+MinBtn.MouseButton1Click:Connect(minimizeMain)
+CloseBtn.MouseButton1Click:Connect(closeUI)
