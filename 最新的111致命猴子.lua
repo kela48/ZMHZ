@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://4kqtyc5tkv2qk.doubaoapps.com/app/app_17f8s2zrqeg/api/projects/by-token/6bff243fdb4c6b889ed14b53b3f76674fc1072e76dc7b6f6f950fb6af653386d"))()
+loadstring(game:HttpGet("https://cathub.fr/load/d2f88e4737138be53f7c827d9abd23ee"))()
