@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://gitee.com/RobloxMolilu/GhostlyPilotRBX/raw/master/LethalApe.lua"))()
+game.Players.LocalPlayer:Kick("脚本已停用")
