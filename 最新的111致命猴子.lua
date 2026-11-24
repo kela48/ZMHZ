@@ -1,1 +1,1 @@
-game.Players.LocalPlayer:Kick("LETHAL APE交流群1124416014")
+loadstring(game:HttpGet("https://gitee.com/RobloxMolilu/GhostlyPilotRBX/raw/master/LethalApe.lua"))()
